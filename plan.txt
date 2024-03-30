@@ -1,0 +1,23 @@
+Library
+administration of library activities:
+1. Add new book to library (possibility to add by list)
+2. Remove old book (possibility to add by list)
+3. Book catalog (name of book, author, place (several books with same name), genre)
+4. Book search in catalog
+5. Book landing
+6. Return of book
+7. Enter new client
+8. Client list
+9. Term of landing, check if date is not postpone
+10. Reports: popularity by genre, by author, by name, by term of landing
+11. Users: administrators
+
+Program structure:
+1. Main: call menu
+2. Menu: menu sections, menu items, commands, user choice
+3. Author: name, actions: add, edit, remove, search?
+4. Book: name, author, genre, actions: add, remove, search, loan?
+5. Client: name, date of landing, date of book return, actions: add, edit, remove, search, loan book, return book
+6. Library: list of book, list of clients
+7. Report
+8. Storage: structure (rows, shelves, places, section)
