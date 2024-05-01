@@ -1,23 +1,44 @@
-Library
+library.Library
 administration of library activities:
 1. Add new book to library (possibility to add by list)
-2. Remove old book (possibility to add by list)
-3. Book catalog (name of book, author, place (several books with same name), genre)
-4. Book search in catalog
-5. Book landing
+2. Remove old book (possibility to do by list)
+3. library.Book catalog (id, name of book, author, year, status, place (several books with same name), genre)
+4. library.Book searching in catalog
+5. library.Book taking
 6. Return of book
-7. Enter new client
-8. Client list
-9. Term of landing, check if date is not postpone
-10. Reports: popularity by genre, by author, by name, by term of landing
-11. Users: administrators
+7. library.Author catalog (id, fist name, last name), searching
+8. Enter new client
+9. library.Client list (id, active, passive, has book on hand, book in due)?
+10. Term of book keeping, check if is not in due
+11. Reports: popularity by genre, by author, by name, by term of keeping
+12. Users: administrators, clients (free book searching only)?
 
 Program structure:
-1. Main: call menu
-2. Menu: menu sections, menu items, commands, user choice
-3. Author: name, actions: add, edit, remove, search?
-4. Book: name, author, genre, actions: add, remove, search, loan?
-5. Client: name, date of landing, date of book return, actions: add, edit, remove, search, loan book, return book
-6. Library: list of book, list of clients
+1. menu.Main: call menu
+2. menu.Menu: menu sections, menu items, commands, user choice
+3. library.Author: id, name, actions: add, edit, remove, search?
+4. library.Book: id, name, author, genre, year, status, actions: add, remove, search, take, return
+5. library.Client: id, name, date of taking, date of book return, actions: add, edit, remove, search, take book, return book
+6. library.Library: list of book, list of clients, list of authors
 7. Report
-8. Storage: structure (rows, shelves, places, section)
+9. Storage: structure (rows, shelves, places, section)
+
+
+ItemList:
+1. add
+2. print all
+3. print one item
+4. remove
+5. update
+6. find by id
+7. find by part of the name
+8. get
+9. set
+
+
+Item:
+add name
+
+Add:
+1. class Authors
+2. class Book
