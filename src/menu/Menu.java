@@ -1,5 +1,7 @@
 package menu;
 
+import commands.MenuCommands;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -9,10 +11,11 @@ public class Menu {
 
     static Scanner in = new Scanner(System.in);
 
+
     static public class Item {
         private final int itemNumber;
         private final String item;
-        private final Supplier<Boolean> command;
+        private Supplier<Boolean> command;
 
         public Item(String item, int itemNumber, Supplier<Boolean> command) {
             this.item = item;
@@ -26,6 +29,10 @@ public class Menu {
 
         public Supplier<Boolean> getCommand() {
             return command;
+        }
+
+        public void setCommand(Supplier<Boolean> value) {
+            command = value;
         }
 
         public String toString() {
@@ -64,11 +71,15 @@ public class Menu {
         System.out.println("-".repeat(30));
         println(menuItems);
 
-        int commandNumber = enterInt("Enter a command number: ");
+        try {
+            int commandNumber = enterInt("Enter a command number: ");
 
-        Item command = menuItems.stream().
-                filter(item -> item.itemNumber == commandNumber).findFirst().get();
-        return command.command != null && command.command.get();
+            Item command = menuItems.stream().
+                    filter(item -> item.itemNumber == commandNumber).findFirst().get();
+            return command.command != null && command.command.get();
+        } catch (RuntimeException e) {
+            return true;
+        }
 
     }
 
@@ -80,18 +91,38 @@ public class Menu {
         list.forEach(System.out::println);
     }
 
-    static public int enterInt(String prompt) {
+    static public Integer enterInt(String prompt) {
         System.out.print(prompt);
         int value = tryEnterInt();
+        if (value == MenuCommands.COMMAND_CANCEL) throw new RuntimeException();
         while (value == -1) {
             value = tryEnterInt();
         }
         return value;
     }
 
-    static private int tryEnterInt() {
+    static public Integer updateInt(String prompt, Integer value) {
+        System.out.printf("%s%s%n", prompt, value);
+        String newValue = in.nextLine();
+        return (newValue.isEmpty() || newValue.isBlank()) ? value : tryEnterInt(newValue);
+    }
+
+    static private Integer tryEnterInt() {
         try {
-            int value = Integer.parseInt(in.nextLine());
+            String s = in.nextLine();
+            if (s.isEmpty()) return MenuCommands.COMMAND_CANCEL;
+            int value = Integer.parseInt(s);
+            if (value < 0) throw new Exception();
+            return value;
+        } catch (Exception e) {
+            System.out.print("The entered value is wrong, please repeat: ");
+            return -1;
+        }
+    }
+
+    static private Integer tryEnterInt(String text) {
+        try {
+            int value = Integer.parseInt(text);
             if (value < 0) throw new Exception();
             return value;
         } catch (Exception e) {
@@ -102,7 +133,15 @@ public class Menu {
 
     static public String enterString(String prompt) {
         System.out.print(prompt);
-        return in.nextLine();
+        String s = in.nextLine();
+        if (s.isEmpty()) throw new RuntimeException();
+        return s;
+    }
+
+    static public String updateString(String prompt, String value) {
+        System.out.printf("%s%s%n", prompt, value);
+        String newValue = in.nextLine();
+        return (newValue.isEmpty() || newValue.isBlank()) ? value : newValue;
     }
 
 }

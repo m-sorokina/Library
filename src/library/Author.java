@@ -1,7 +1,11 @@
 package library;
 
+import com.fasterxml.jackson.annotation.*;
+
 public class Author extends Item {
+    @JsonProperty("first name")
     private String firstName;
+    @JsonProperty("last name")
     private String lastName;
 
     public Author(String firstName, String lastName){
@@ -32,12 +36,15 @@ public class Author extends Item {
         this.lastName = lastName;
     }
 
+    @JsonIgnore
     public String getFullName(){
         return String.format("%s, %s", getName(), getFirstName());
     }
 
     public String toString(){
         return super.toString()
-                + String.format(" %s", getFirstName());
+                + String.format(" %s>", getFirstName());
     }
+
+
 }

@@ -4,6 +4,8 @@ import library.Author;
 import library.ItemsList;
 import menu.Main;
 
+import java.util.Objects;
+
 public class AuthorCommands extends MenuCommands<Author> {
 
     public AuthorCommands() {
@@ -16,11 +18,27 @@ public class AuthorCommands extends MenuCommands<Author> {
         return Main.lib.getAuthors();
     }
 
+    public Boolean removeItem() {
+        Integer id = enterInt("Enter id: ");
+        if (Main.lib.getBooks().getListOf().stream()
+                .anyMatch(book ->
+                        Objects.equals(book.getAuthor().getId(), id))) {
+            System.out.println("Author can't be removed. Some author's books are still available");
+        } else {
+            getList().remove(getList().find(id));
+        }
+        return true;
+    }
+
     public Boolean addItem() {
-        Author author = new Author();
-        author.setName(enterString("Enter last name: "));
-        author.setFirstName(enterString("Enter first name: "));
-        getList().add(author);
+        try {
+            Author author = new Author();
+            author.setName(enterString("Enter last name: "));
+            author.setFirstName(enterString("Enter first name: "));
+            getList().add(author);
+        } catch (RuntimeException ignored) {
+
+        }
         return true;
     }
 
@@ -31,8 +49,8 @@ public class AuthorCommands extends MenuCommands<Author> {
             return true;
         }
         System.out.println(author);
-        author.setName(enterString("Enter last name: "));
-        author.setFirstName(enterString("Enter first name: "));
+        author.setName(updateString("Enter last name: ", author.getName()));
+        author.setFirstName(updateString("Enter first name: ", author.getFirstName()));
         return true;
     }
 

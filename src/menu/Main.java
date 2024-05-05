@@ -54,6 +54,7 @@ public class Main {
             fileIn = new FileInputStream(filename);
             Library lib = objectMapper.readValue(fileIn, Library.class);
             fileIn.close();
+            lib.linkingAuthors();
             return lib;
         } catch (Exception e) {
             System.out.println(e.getMessage());

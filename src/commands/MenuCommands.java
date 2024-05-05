@@ -5,6 +5,7 @@ import menu.Menu;
 
 public class MenuCommands<T> extends Menu {
 
+    public final static int COMMAND_CANCEL = -2;
     public MenuCommands() {
         super();
         add("Print all", 1, this::printAll);
@@ -20,6 +21,7 @@ public class MenuCommands<T> extends Menu {
     }
 
     public Boolean printAll() {
+        System.out.println("-".repeat(30));
         println(getList().getListOf());
         return true;
     }

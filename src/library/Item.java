@@ -1,7 +1,11 @@
 package library;
 
+import com.fasterxml.jackson.annotation.*;
+
 public class Item {
     private Integer id;
+
+    @JsonIgnore
     private String name;
 
     public Item(){
@@ -29,7 +33,7 @@ public class Item {
     }
 
     public String toString(){
-        return String.format("<%d %s", getId(), getName());
+        return String.format("<(%d) %s", getId(), getName());
     }
 
 }

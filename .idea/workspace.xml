@@ -4,35 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/AuthorCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/MenuCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/ItemsList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menu/LibCatalogMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menu/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menu/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
+    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="Authors and AuthorsCommands were created">
+      <change afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plan.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Author.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Genre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IEditCommands.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IMenuCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ItemsList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Library.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/AuthorCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/AuthorCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/MenuCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/MenuCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/ItemsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/ItemsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/LibCatalogMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/LibCatalogMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +41,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -74,7 +64,6 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/USER/IdeaProjects/Library",
@@ -124,6 +113,27 @@
       <option name="presentableId" value="Default" />
       <updated>1711810055586</updated>
     </task>
+    <task id="LOCAL-00001" summary="Authors and AuthorsCommands were created">
+      <option name="closed" value="true" />
+      <created>1714585587876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714585587876</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Authors and AuthorsCommands were created">
+      <option name="closed" value="true" />
+      <created>1714585605854</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714585605854</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Authors and AuthorsCommands were created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authors and AuthorsCommands were created" />
   </component>
 </project>

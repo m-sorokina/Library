@@ -42,3 +42,23 @@ add name
 Add:
 1. class Authors
 2. class Book
+
+1. Add to deserializeLib linking Authors from file to authors
+2. Genre (input by id)
+3. correct to string for printing books and authors
+4. Finish book commands
+
+
+3. rewrite EditItem (MenuCommands)
+4. enter - return to menu without saving
+3. Year checking
+
+5. Add checking that such book is already added?
+1. Add listTitle to ItemsList
+2. Add listTitle to printAll (MenuCommands)
+4. Exception for Enter
+5. Exception for wrong value
+
+
+
+
