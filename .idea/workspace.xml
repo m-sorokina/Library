@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="Authors and AuthorsCommands were created">
-      <change afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
+    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="Exit by Enter">
+      <change afterPath="$PROJECT_DIR$/src/exceptions/CommandCancelException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/WrongValueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/library/BookCopy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/AuthorCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/AuthorCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/MenuCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/MenuCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/BookCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library/ItemsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/ItemsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/LibCatalogMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/LibCatalogMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
     </list>
@@ -41,6 +38,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -57,7 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -70,7 +70,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -129,11 +129,27 @@
       <option name="project" value="LOCAL" />
       <updated>1714585605854</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Exit by Enter">
+      <option name="closed" value="true" />
+      <created>1714923226469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714923226469</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Authors and AuthorsCommands were created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authors and AuthorsCommands were created" />
+    <MESSAGE value="Exit by Enter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exit by Enter" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.NoSuchElementException" memberName="cause" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -55,6 +55,7 @@ public class Main {
             Library lib = objectMapper.readValue(fileIn, Library.class);
             fileIn.close();
             lib.linkingAuthors();
+            lib.linkingBooks();
             return lib;
         } catch (Exception e) {
             System.out.println(e.getMessage());

@@ -49,16 +49,24 @@ Add:
 4. Finish book commands
 
 
-3. rewrite EditItem (MenuCommands)
-4. enter - return to menu without saving
-3. Year checking
+1. ~~rewrite EditItem (MenuCommands)~~
+1. ~~enter - return to menu without saving~~
+1. ~~Year checking~~
+4. ~~Exception for Enter~~
+5. ~~Exception for wrong value~~
 
-5. Add checking that such book is already added?
+
+1. Add checking that such book is already added?
 1. Add listTitle to ItemsList
-2. Add listTitle to printAll (MenuCommands)
-4. Exception for Enter
-5. Exception for wrong value
+1. Add listTitle to printAll (MenuCommands)
+2. Add map of authors to book
 
+1. Repeat the cause of exception only
+2. Books copies
+3. Clients (Work with clients)
+4. Add book new copies to BookCommand
+5. Check exception message in linking method
+6. rewrite add copies
 
 
 

@@ -1,5 +1,6 @@
 package commands;
 
+import exceptions.CommandCancelException;
 import library.Author;
 import library.ItemsList;
 import menu.Main;
@@ -36,7 +37,7 @@ public class AuthorCommands extends MenuCommands<Author> {
             author.setName(enterString("Enter last name: "));
             author.setFirstName(enterString("Enter first name: "));
             getList().add(author);
-        } catch (RuntimeException ignored) {
+        } catch (CommandCancelException ignored) {
 
         }
         return true;

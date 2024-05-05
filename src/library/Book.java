@@ -1,6 +1,7 @@
 package library;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import exceptions.WrongValueException;
 import org.joda.time.LocalDate;
 
 public class Book extends Item {
@@ -58,7 +59,7 @@ public class Book extends Item {
 
     public void setYear(int year) {
         if (checkYear(year)){
-            throw new RuntimeException();
+            throw new WrongValueException("Entered year is wrong: " + year);
         }
         this.year = year;
     }

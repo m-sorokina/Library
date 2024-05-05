@@ -1,6 +1,7 @@
 package menu;
 
 import commands.MenuCommands;
+import exceptions.CommandCancelException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,7 +78,7 @@ public class Menu {
             Item command = menuItems.stream().
                     filter(item -> item.itemNumber == commandNumber).findFirst().get();
             return command.command != null && command.command.get();
-        } catch (RuntimeException e) {
+        } catch (CommandCancelException e) {
             return true;
         }
 
@@ -94,7 +95,7 @@ public class Menu {
     static public Integer enterInt(String prompt) {
         System.out.print(prompt);
         int value = tryEnterInt();
-        if (value == MenuCommands.COMMAND_CANCEL) throw new RuntimeException();
+        if (value == MenuCommands.COMMAND_CANCEL) throw new CommandCancelException();
         while (value == -1) {
             value = tryEnterInt();
         }
@@ -102,7 +103,7 @@ public class Menu {
     }
 
     static public Integer updateInt(String prompt, Integer value) {
-        System.out.printf("%s%s%n", prompt, value);
+        System.out.printf("%s%s%nNew value: ", prompt, value);
         String newValue = in.nextLine();
         return (newValue.isEmpty() || newValue.isBlank()) ? value : tryEnterInt(newValue);
     }
@@ -134,12 +135,12 @@ public class Menu {
     static public String enterString(String prompt) {
         System.out.print(prompt);
         String s = in.nextLine();
-        if (s.isEmpty()) throw new RuntimeException();
+        if (s.isEmpty()) throw new CommandCancelException();
         return s;
     }
 
     static public String updateString(String prompt, String value) {
-        System.out.printf("%s%s%n", prompt, value);
+        System.out.printf("%s%s%nNew value: ", prompt, value);
         String newValue = in.nextLine();
         return (newValue.isEmpty() || newValue.isBlank()) ? value : newValue;
     }

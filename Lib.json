@@ -1,0 +1,414 @@
+{
+  "books" : {
+    "list" : [ {
+      "id" : 1,
+      "author" : {
+        "id" : 3,
+        "first name" : "Robert",
+        "last name" : "Heinlein"
+      },
+      "genre" : "SCIENCE_FICTION",
+      "year" : 1961,
+      "title" : "Stranger in a Stranger Land"
+    }, {
+      "id" : 2,
+      "author" : {
+        "id" : 2,
+        "first name" : "Isaak",
+        "last name" : "Asimov"
+      },
+      "genre" : "SCIENCE_FICTION",
+      "year" : 1950,
+      "title" : "Foundation"
+    }, {
+      "id" : 3,
+      "author" : {
+        "id" : 1,
+        "first name" : "Ray",
+        "last name" : "Bradbury"
+      },
+      "genre" : "SCIENCE_FICTION",
+      "year" : 1951,
+      "title" : "Fahrenheit 451"
+    }, {
+      "id" : 4,
+      "author" : {
+        "id" : 4,
+        "first name" : "Ursula",
+        "last name" : "Le Guin"
+      },
+      "genre" : "FANTASY",
+      "year" : 1968,
+      "title" : "A Wizard of  Earthsea"
+    }, {
+      "id" : 5,
+      "author" : {
+        "id" : 4,
+        "first name" : "Ursula",
+        "last name" : "Le Guin"
+      },
+      "genre" : "FANTASY",
+      "year" : 1969,
+      "title" : "The Left Hand of Darkness"
+    }, {
+      "id" : 6,
+      "author" : {
+        "id" : 4,
+        "first name" : "Ursula",
+        "last name" : "Le Guin"
+      },
+      "genre" : "FANTASY",
+      "year" : 1974,
+      "title" : "The Dispossessed"
+    }, {
+      "id" : 7,
+      "author" : {
+        "id" : 1,
+        "first name" : "Ray",
+        "last name" : "Bradbury"
+      },
+      "genre" : "SCIENCE_FICTION",
+      "year" : 1957,
+      "title" : "Dandelion Wine"
+    }, {
+      "id" : 8,
+      "author" : {
+        "id" : 1,
+        "first name" : "Ray",
+        "last name" : "Bradbury"
+      },
+      "genre" : "SCIENCE_FICTION",
+      "year" : 1951,
+      "title" : "The Illustrated Man"
+    }, {
+      "id" : 9,
+      "author" : {
+        "id" : 6,
+        "first name" : "Stanislav",
+        "last name" : "Lem"
+      },
+      "genre" : "SCIENCE_FICTION",
+      "year" : 1961,
+      "title" : "Solaris"
+    }, {
+      "id" : 10,
+      "author" : {
+        "id" : 5,
+        "first name" : "Arthur",
+        "last name" : "Clarke"
+      },
+      "genre" : "SCIENCE_FICTION",
+      "year" : 1982,
+      "title" : "2010 Odyssey Two"
+    }, {
+      "id" : 11,
+      "author" : {
+        "id" : 7,
+        "first name" : "Alexandre",
+        "last name" : "Dumas"
+      },
+      "genre" : "HISTORICAL",
+      "year" : 1944,
+      "title" : "The Three Musketeers"
+    }, {
+      "id" : 12,
+      "author" : {
+        "id" : 2,
+        "first name" : "Isaak",
+        "last name" : "Asimov"
+      },
+      "genre" : "NOT_DEFINED",
+      "year" : 2022,
+      "title" : "New try"
+    } ]
+  },
+  "authors" : {
+    "list" : [ {
+      "id" : 1,
+      "first name" : "Ray",
+      "last name" : "Bradbury"
+    }, {
+      "id" : 2,
+      "first name" : "Isaak",
+      "last name" : "Asimov"
+    }, {
+      "id" : 3,
+      "first name" : "Robert",
+      "last name" : "Heinlein"
+    }, {
+      "id" : 4,
+      "first name" : "Ursula",
+      "last name" : "Le Guin"
+    }, {
+      "id" : 5,
+      "first name" : "Arthur",
+      "last name" : "Clarke"
+    }, {
+      "id" : 6,
+      "first name" : "Stanislav",
+      "last name" : "Lem"
+    }, {
+      "id" : 7,
+      "first name" : "Alexandre",
+      "last name" : "Dumas"
+    } ]
+  },
+  "bookCopies" : {
+    "list" : [ {
+      "id" : 1,
+      "book" : {
+        "id" : 2,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1950,
+        "title" : "Foundation"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 2,
+      "book" : {
+        "id" : 2,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1950,
+        "title" : "Foundation"
+      },
+      "copyNumber" : 2,
+      "copyBookStatus" : null
+    }, {
+      "id" : 3,
+      "book" : {
+        "id" : 3,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1951,
+        "title" : "Fahrenheit 451"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 4,
+      "book" : {
+        "id" : 10,
+        "author" : {
+          "id" : 5,
+          "first name" : "Arthur",
+          "last name" : "Clarke"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1982,
+        "title" : "2010 Odyssey Two"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 5,
+      "book" : {
+        "id" : 10,
+        "author" : {
+          "id" : 5,
+          "first name" : "Arthur",
+          "last name" : "Clarke"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1982,
+        "title" : "2010 Odyssey Two"
+      },
+      "copyNumber" : 2,
+      "copyBookStatus" : null
+    }, {
+      "id" : 6,
+      "book" : {
+        "id" : 10,
+        "author" : {
+          "id" : 5,
+          "first name" : "Arthur",
+          "last name" : "Clarke"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1982,
+        "title" : "2010 Odyssey Two"
+      },
+      "copyNumber" : 3,
+      "copyBookStatus" : null
+    }, {
+      "id" : 7,
+      "book" : {
+        "id" : 10,
+        "author" : {
+          "id" : 5,
+          "first name" : "Arthur",
+          "last name" : "Clarke"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1982,
+        "title" : "2010 Odyssey Two"
+      },
+      "copyNumber" : 4,
+      "copyBookStatus" : null
+    }, {
+      "id" : 8,
+      "book" : {
+        "id" : 10,
+        "author" : {
+          "id" : 5,
+          "first name" : "Arthur",
+          "last name" : "Clarke"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1982,
+        "title" : "2010 Odyssey Two"
+      },
+      "copyNumber" : 5,
+      "copyBookStatus" : null
+    }, {
+      "id" : 9,
+      "book" : {
+        "id" : 5,
+        "author" : {
+          "id" : 4,
+          "first name" : "Ursula",
+          "last name" : "Le Guin"
+        },
+        "genre" : "FANTASY",
+        "year" : 1969,
+        "title" : "The Left Hand of Darkness"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 10,
+      "book" : {
+        "id" : 5,
+        "author" : {
+          "id" : 4,
+          "first name" : "Ursula",
+          "last name" : "Le Guin"
+        },
+        "genre" : "FANTASY",
+        "year" : 1969,
+        "title" : "The Left Hand of Darkness"
+      },
+      "copyNumber" : 2,
+      "copyBookStatus" : null
+    }, {
+      "id" : 11,
+      "book" : {
+        "id" : 7,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1957,
+        "title" : "Dandelion Wine"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 12,
+      "book" : {
+        "id" : 7,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1957,
+        "title" : "Dandelion Wine"
+      },
+      "copyNumber" : 2,
+      "copyBookStatus" : null
+    }, {
+      "id" : 13,
+      "book" : {
+        "id" : 7,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1957,
+        "title" : "Dandelion Wine"
+      },
+      "copyNumber" : 3,
+      "copyBookStatus" : null
+    }, {
+      "id" : 14,
+      "book" : {
+        "id" : 7,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1957,
+        "title" : "Dandelion Wine"
+      },
+      "copyNumber" : 4,
+      "copyBookStatus" : null
+    }, {
+      "id" : 15,
+      "book" : {
+        "id" : 7,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1957,
+        "title" : "Dandelion Wine"
+      },
+      "copyNumber" : 5,
+      "copyBookStatus" : null
+    }, {
+      "id" : 16,
+      "book" : {
+        "id" : 7,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1957,
+        "title" : "Dandelion Wine"
+      },
+      "copyNumber" : 6,
+      "copyBookStatus" : null
+    }, {
+      "id" : 17,
+      "book" : {
+        "id" : 7,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1957,
+        "title" : "Dandelion Wine"
+      },
+      "copyNumber" : 7,
+      "copyBookStatus" : null
+    } ]
+  }
+}
