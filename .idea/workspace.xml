@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="Exit by Enter">
-      <change afterPath="$PROJECT_DIR$/src/exceptions/CommandCancelException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/WrongValueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/BookCopy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/AuthorCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/AuthorCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/BookCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/ItemsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/ItemsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
+    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="BookCopy class is added">
+      <change beforePath="$PROJECT_DIR$/plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +126,22 @@
       <option name="project" value="LOCAL" />
       <updated>1714923226469</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="BookCopy class is added">
+      <option name="closed" value="true" />
+      <created>1714946331495</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714946331495</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Authors and AuthorsCommands were created" />
     <MESSAGE value="Exit by Enter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exit by Enter" />
+    <MESSAGE value="BookCopy class is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="BookCopy class is added" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

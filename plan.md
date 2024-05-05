@@ -66,7 +66,8 @@ Add:
 3. Clients (Work with clients)
 4. Add book new copies to BookCommand
 5. Check exception message in linking method
-6. rewrite add copies
+6. rewrite add copies to separate class extends MenuCommands
+
 
 
 
