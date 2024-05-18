@@ -1,7 +1,6 @@
 package library;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import commands.MenuCommands;
 import exceptions.CommandCancelException;
 import menu.Menu;
 
@@ -12,8 +11,21 @@ public class ItemsList<T> {
     @JsonProperty("list")
     List<T> listOf;
 
+    @JsonProperty("list title")
+    String title;
+
     public ItemsList() {
         listOf = new ArrayList<>();
+        title = "";
+    }
+
+    public ItemsList(String title) {
+        listOf = new ArrayList<>();
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public List<T> getListOf() {
@@ -52,7 +64,7 @@ public class ItemsList<T> {
         return listOf.stream().filter(item -> ((Item) item).getId().equals(id)).findAny().
                 orElseGet(() -> {
                     Integer value  = (Menu.enterInt("Wrong id, please repeat, 'Enter' to exit: "));
-                    if (value == MenuCommands.COMMAND_CANCEL){throw new CommandCancelException();}
+                    if (value == Menu.COMMAND_CANCEL){throw new CommandCancelException();}
                     return find(value);
                 });
     }

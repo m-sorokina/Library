@@ -1,6 +1,5 @@
 package menu;
 
-import commands.MenuCommands;
 import exceptions.CommandCancelException;
 
 import java.util.ArrayList;
@@ -9,6 +8,9 @@ import java.util.Scanner;
 import java.util.function.Supplier;
 
 public class Menu {
+
+    public final static int WRONG_COMMAND = -1;
+    public final static int COMMAND_CANCEL = -2;
 
     static Scanner in = new Scanner(System.in);
 
@@ -42,9 +44,24 @@ public class Menu {
     }
 
     private final List<Item> menuItems;
+    private String title;
 
     public Menu() {
         menuItems = new ArrayList<>();
+        title = "";
+    }
+
+    public Menu(String title) {
+        menuItems = new ArrayList<>();
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void add(String item, int itemNumber, Supplier<Boolean> command) {
@@ -70,13 +87,18 @@ public class Menu {
 
     public boolean getCommand() {
         System.out.println("-".repeat(30));
-        println(menuItems);
-
+        if (getTitle() != null && !getTitle().trim().isEmpty()) {
+            println(menuItems, getTitle());
+        } else {
+            println(menuItems);
+        }
         try {
             int commandNumber = enterInt("Enter a command number: ");
 
-            Item command = menuItems.stream().
-                    filter(item -> item.itemNumber == commandNumber).findFirst().get();
+            Item command = menuItems.stream()
+                    .filter(item -> item.itemNumber == commandNumber)
+                    .findFirst()
+                    .get();
             return command.command != null && command.command.get();
         } catch (CommandCancelException e) {
             return true;
@@ -92,10 +114,21 @@ public class Menu {
         list.forEach(System.out::println);
     }
 
+    public static <T> void println(List<T> list, String title) {
+        if (list == null || list.isEmpty()) {
+            System.out.println("Not found");
+            return;
+        }
+        System.out.println(title);
+        System.out.println("-".repeat(30));
+        list.forEach(System.out::println);
+    }
+
+
     static public Integer enterInt(String prompt) {
         System.out.print(prompt);
         int value = tryEnterInt();
-        if (value == MenuCommands.COMMAND_CANCEL) throw new CommandCancelException();
+        if (value == COMMAND_CANCEL) throw new CommandCancelException();
         while (value == -1) {
             value = tryEnterInt();
         }
@@ -111,13 +144,13 @@ public class Menu {
     static private Integer tryEnterInt() {
         try {
             String s = in.nextLine();
-            if (s.isEmpty()) return MenuCommands.COMMAND_CANCEL;
+            if (s.isEmpty()) return COMMAND_CANCEL;
             int value = Integer.parseInt(s);
             if (value < 0) throw new Exception();
             return value;
         } catch (Exception e) {
             System.out.print("The entered value is wrong, please repeat: ");
-            return -1;
+            return WRONG_COMMAND;
         }
     }
 

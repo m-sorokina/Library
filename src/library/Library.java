@@ -8,12 +8,12 @@ public class Library {
     public ItemsList<BookCopy> bookCopies;
 
     public Library() {
-        authors = new ItemsList<>();
+        authors = new ItemsList<>("AUTHORS LIST");
         authors.add(new Author("Ray", "Bradbury"));
         authors.add(new Author("Isaak", "Asimov"));
         authors.add(new Author("Robert", "Heinlein"));
 
-        books = new ItemsList<>();
+        books = new ItemsList<>("BOOKS LIST");
         books.add(new Book("Stranger in a Stranger Land", authors.getItem(2), Genre.SCIENCE_FICTION, 1961));
         books.add(new Book("Foundation", authors.getItem(1), Genre.SCIENCE_FICTION, 1950));
         books.add(new Book("Fahrenheit 451", authors.getItem(0), Genre.SCIENCE_FICTION, 1951));

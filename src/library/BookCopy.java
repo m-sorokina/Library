@@ -36,4 +36,8 @@ public class BookCopy extends Item {
         return copyBookStatus;
     }
 
+    public String toString(){
+        return String.format("%d ", getCopyNumber());
+    }
+
 }

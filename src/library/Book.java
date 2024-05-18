@@ -2,7 +2,10 @@ package library;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import exceptions.WrongValueException;
+import menu.Main;
 import org.joda.time.LocalDate;
+
+import java.util.List;
 
 public class Book extends Item {
     private Author author;
@@ -64,14 +67,29 @@ public class Book extends Item {
         this.year = year;
     }
 
+    public int getCopiesNumbers(){
+        return (int) Main.lib.getBookCopies().getListOf().stream()
+                .filter(bookCopy -> bookCopy.getBook().getId().equals(getId()))
+                .count();
+    }
     public String toString() {
         return super.toString()
-                + String.format(" %s, %s, %d>",
-                getAuthor(), getGenre().toString(), getYear());
+                + String.format(" %s, %s, %d, [copy numbers: %d]>",
+                getAuthor(),
+                getGenre().toString(),
+                getYear(),
+                getCopiesNumbers());
+    }
+    private Boolean checkYear(int year) {
+
+        return (year < 1900 || year > (new LocalDate()).getYear());
     }
 
-    private Boolean checkYear(int year) {
-        return (year < 1900 || year > (new LocalDate()).getYear());
+    public List<BookCopy> findBookCopies(){
+        return Main.lib.getBookCopies().getListOf().stream()
+                .filter(bookCopy ->
+                        bookCopy.getBook().getId().equals(this.getId()))
+                .toList();
     }
 
 }

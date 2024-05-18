@@ -5,7 +5,6 @@ import menu.Menu;
 
 public class MenuCommands<T> extends Menu {
 
-    public final static int COMMAND_CANCEL = -2;
     public MenuCommands() {
         super();
         add("Print all", 1, this::printAll);
@@ -22,9 +21,20 @@ public class MenuCommands<T> extends Menu {
 
     public Boolean printAll() {
         System.out.println("-".repeat(30));
-        println(getList().getListOf());
+        if (getList().getTitle() != null && !getList().getTitle().trim().isEmpty()) {
+            println(getList().getListOf(), getList().getTitle());
+        } else {
+            println(getList().getListOf());
+        }
         return true;
     }
+
+//    public Boolean printAll(String title) {
+//        System.out.println("-".repeat(30));
+//        println(getList().getListOf(), title);
+//        return true;
+//    }
+
 
     public Boolean addItem() {
         return true;
@@ -45,7 +55,7 @@ public class MenuCommands<T> extends Menu {
         return true;
     }
 
-    public Boolean findByName(){
+    public Boolean findByName() {
         println(getList().find(enterString("Enter name or part of name: ")));
         return true;
     }

@@ -9,6 +9,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1961,
+      "copiesNumbers" : 0,
       "title" : "Stranger in a Stranger Land"
     }, {
       "id" : 2,
@@ -19,6 +20,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1950,
+      "copiesNumbers" : 2,
       "title" : "Foundation"
     }, {
       "id" : 3,
@@ -29,6 +31,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1951,
+      "copiesNumbers" : 1,
       "title" : "Fahrenheit 451"
     }, {
       "id" : 4,
@@ -39,6 +42,7 @@
       },
       "genre" : "FANTASY",
       "year" : 1968,
+      "copiesNumbers" : 0,
       "title" : "A Wizard of  Earthsea"
     }, {
       "id" : 5,
@@ -49,6 +53,7 @@
       },
       "genre" : "FANTASY",
       "year" : 1969,
+      "copiesNumbers" : 2,
       "title" : "The Left Hand of Darkness"
     }, {
       "id" : 6,
@@ -59,6 +64,7 @@
       },
       "genre" : "FANTASY",
       "year" : 1974,
+      "copiesNumbers" : 0,
       "title" : "The Dispossessed"
     }, {
       "id" : 7,
@@ -69,6 +75,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1957,
+      "copiesNumbers" : 7,
       "title" : "Dandelion Wine"
     }, {
       "id" : 8,
@@ -79,6 +86,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1951,
+      "copiesNumbers" : 0,
       "title" : "The Illustrated Man"
     }, {
       "id" : 9,
@@ -89,6 +97,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1961,
+      "copiesNumbers" : 0,
       "title" : "Solaris"
     }, {
       "id" : 10,
@@ -99,6 +108,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1982,
+      "copiesNumbers" : 5,
       "title" : "2010 Odyssey Two"
     }, {
       "id" : 11,
@@ -109,6 +119,7 @@
       },
       "genre" : "HISTORICAL",
       "year" : 1944,
+      "copiesNumbers" : 3,
       "title" : "The Three Musketeers"
     }, {
       "id" : 12,
@@ -119,8 +130,21 @@
       },
       "genre" : "NOT_DEFINED",
       "year" : 2022,
+      "copiesNumbers" : 7,
       "title" : "New try"
-    } ]
+    }, {
+      "id" : 13,
+      "author" : {
+        "id" : 8,
+        "first name" : "Jane",
+        "last name" : "Austen"
+      },
+      "genre" : "NOVELS",
+      "year" : 2015,
+      "copiesNumbers" : 3,
+      "title" : "Pride and Prejudice"
+    } ],
+    "list title" : "BOOKS LIST"
   },
   "authors" : {
     "list" : [ {
@@ -151,7 +175,12 @@
       "id" : 7,
       "first name" : "Alexandre",
       "last name" : "Dumas"
-    } ]
+    }, {
+      "id" : 8,
+      "first name" : "Jane",
+      "last name" : "Austen"
+    } ],
+    "list title" : "AUTHORS LIST"
   },
   "bookCopies" : {
     "list" : [ {
@@ -165,6 +194,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1950,
+        "copiesNumbers" : 2,
         "title" : "Foundation"
       },
       "copyNumber" : 1,
@@ -180,6 +210,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1950,
+        "copiesNumbers" : 2,
         "title" : "Foundation"
       },
       "copyNumber" : 2,
@@ -195,6 +226,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1951,
+        "copiesNumbers" : 1,
         "title" : "Fahrenheit 451"
       },
       "copyNumber" : 1,
@@ -210,6 +242,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1982,
+        "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
       "copyNumber" : 1,
@@ -225,6 +258,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1982,
+        "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
       "copyNumber" : 2,
@@ -240,6 +274,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1982,
+        "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
       "copyNumber" : 3,
@@ -255,6 +290,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1982,
+        "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
       "copyNumber" : 4,
@@ -270,6 +306,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1982,
+        "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
       "copyNumber" : 5,
@@ -285,6 +322,7 @@
         },
         "genre" : "FANTASY",
         "year" : 1969,
+        "copiesNumbers" : 2,
         "title" : "The Left Hand of Darkness"
       },
       "copyNumber" : 1,
@@ -300,6 +338,7 @@
         },
         "genre" : "FANTASY",
         "year" : 1969,
+        "copiesNumbers" : 2,
         "title" : "The Left Hand of Darkness"
       },
       "copyNumber" : 2,
@@ -315,6 +354,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1957,
+        "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
       "copyNumber" : 1,
@@ -330,6 +370,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1957,
+        "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
       "copyNumber" : 2,
@@ -345,6 +386,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1957,
+        "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
       "copyNumber" : 3,
@@ -360,6 +402,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1957,
+        "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
       "copyNumber" : 4,
@@ -375,6 +418,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1957,
+        "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
       "copyNumber" : 5,
@@ -390,6 +434,7 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1957,
+        "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
       "copyNumber" : 6,
@@ -405,10 +450,220 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1957,
+        "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
       "copyNumber" : 7,
       "copyBookStatus" : null
-    } ]
+    }, {
+      "id" : 18,
+      "book" : {
+        "id" : 12,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "NOT_DEFINED",
+        "year" : 2022,
+        "copiesNumbers" : 7,
+        "title" : "New try"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 20,
+      "book" : {
+        "id" : 13,
+        "author" : {
+          "id" : 8,
+          "first name" : "Jane",
+          "last name" : "Austen"
+        },
+        "genre" : "NOVELS",
+        "year" : 2015,
+        "copiesNumbers" : 3,
+        "title" : "Pride and Prejudice"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 21,
+      "book" : {
+        "id" : 13,
+        "author" : {
+          "id" : 8,
+          "first name" : "Jane",
+          "last name" : "Austen"
+        },
+        "genre" : "NOVELS",
+        "year" : 2015,
+        "copiesNumbers" : 3,
+        "title" : "Pride and Prejudice"
+      },
+      "copyNumber" : 2,
+      "copyBookStatus" : null
+    }, {
+      "id" : 22,
+      "book" : {
+        "id" : 13,
+        "author" : {
+          "id" : 8,
+          "first name" : "Jane",
+          "last name" : "Austen"
+        },
+        "genre" : "NOVELS",
+        "year" : 2015,
+        "copiesNumbers" : 3,
+        "title" : "Pride and Prejudice"
+      },
+      "copyNumber" : 3,
+      "copyBookStatus" : null
+    }, {
+      "id" : 23,
+      "book" : {
+        "id" : 12,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "NOT_DEFINED",
+        "year" : 2022,
+        "copiesNumbers" : 7,
+        "title" : "New try"
+      },
+      "copyNumber" : 2,
+      "copyBookStatus" : null
+    }, {
+      "id" : 24,
+      "book" : {
+        "id" : 12,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "NOT_DEFINED",
+        "year" : 2022,
+        "copiesNumbers" : 7,
+        "title" : "New try"
+      },
+      "copyNumber" : 3,
+      "copyBookStatus" : null
+    }, {
+      "id" : 26,
+      "book" : {
+        "id" : 12,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "NOT_DEFINED",
+        "year" : 2022,
+        "copiesNumbers" : 7,
+        "title" : "New try"
+      },
+      "copyNumber" : 5,
+      "copyBookStatus" : null
+    }, {
+      "id" : 27,
+      "book" : {
+        "id" : 12,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "NOT_DEFINED",
+        "year" : 2022,
+        "copiesNumbers" : 7,
+        "title" : "New try"
+      },
+      "copyNumber" : 6,
+      "copyBookStatus" : null
+    }, {
+      "id" : 28,
+      "book" : {
+        "id" : 12,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "NOT_DEFINED",
+        "year" : 2022,
+        "copiesNumbers" : 7,
+        "title" : "New try"
+      },
+      "copyNumber" : 7,
+      "copyBookStatus" : null
+    }, {
+      "id" : 29,
+      "book" : {
+        "id" : 12,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "NOT_DEFINED",
+        "year" : 2022,
+        "copiesNumbers" : 7,
+        "title" : "New try"
+      },
+      "copyNumber" : 8,
+      "copyBookStatus" : null
+    }, {
+      "id" : 30,
+      "book" : {
+        "id" : 11,
+        "author" : {
+          "id" : 7,
+          "first name" : "Alexandre",
+          "last name" : "Dumas"
+        },
+        "genre" : "HISTORICAL",
+        "year" : 1944,
+        "copiesNumbers" : 3,
+        "title" : "The Three Musketeers"
+      },
+      "copyNumber" : 1,
+      "copyBookStatus" : null
+    }, {
+      "id" : 31,
+      "book" : {
+        "id" : 11,
+        "author" : {
+          "id" : 7,
+          "first name" : "Alexandre",
+          "last name" : "Dumas"
+        },
+        "genre" : "HISTORICAL",
+        "year" : 1944,
+        "copiesNumbers" : 3,
+        "title" : "The Three Musketeers"
+      },
+      "copyNumber" : 2,
+      "copyBookStatus" : null
+    }, {
+      "id" : 32,
+      "book" : {
+        "id" : 11,
+        "author" : {
+          "id" : 7,
+          "first name" : "Alexandre",
+          "last name" : "Dumas"
+        },
+        "genre" : "HISTORICAL",
+        "year" : 1944,
+        "copiesNumbers" : 3,
+        "title" : "The Three Musketeers"
+      },
+      "copyNumber" : 3,
+      "copyBookStatus" : null
+    } ],
+    "list title" : ""
   }
 }

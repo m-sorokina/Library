@@ -40,13 +40,13 @@ Item:
 add name
 
 Add:
-1. class Authors
-2. class Book
+1. ~~class Authors~~
+2. ~~class Book~~
 
-1. Add to deserializeLib linking Authors from file to authors
-2. Genre (input by id)
-3. correct to string for printing books and authors
-4. Finish book commands
+1. ~~Add to deserializeLib linking Authors from file to authors~~
+2. ~~Genre (input by id)~~
+3. ~~correct to string for printing books and authors~~
+4. ~~Finish book commands~~
 
 
 1. ~~rewrite EditItem (MenuCommands)~~
@@ -57,16 +57,22 @@ Add:
 
 
 1. Add checking that such book is already added?
-1. Add listTitle to ItemsList
-1. Add listTitle to printAll (MenuCommands)
+1. ~~Add listTitle to ItemsList~~
+1. ~~Add listTitle to printAll (MenuCommands)~~
+2. ~~Add menuTitle to menu~~
+3. ~~Add menuTitle above menu~~
 2. Add map of authors to book
 
 1. Repeat the cause of exception only
 2. Books copies
 3. Clients (Work with clients)
-4. Add book new copies to BookCommand
+4. ~~Add book new copies to BookCommand~~
 5. Check exception message in linking method
-6. rewrite add copies to separate class extends MenuCommands
+6. ~~rewrite add copies to separate class extends MenuCommands~~
+7. think about find book and print it - if it is better to make general method
+8. add remove, insert to Menu class commands
+9. ~~Remove book copy item~~
+10. ~~Remove book with all copies~~
 
 
 
