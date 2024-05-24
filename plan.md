@@ -78,6 +78,9 @@ Add:
 13. Add abstract checking during entering data in Menu
 14. Update in BookCommands with new find
 
+
+Additional branch
+=======
 additional things
 
 список доработок
@@ -89,6 +92,7 @@ additional things
 ??? разобраться с Optional
 https://www.baeldung.com/java-optional
 ? разобраться с необрабатываемым исключением
+
 
 
 
