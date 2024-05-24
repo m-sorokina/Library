@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="try new branch">
+    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="try new branch 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716574389160</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="try new branch 3">
+      <option name="closed" value="true" />
+      <created>1716576901332</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716576901332</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,7 +193,8 @@
     <MESSAGE value="Book copies remove added" />
     <MESSAGE value="findBookCopies added&#10;refactor addItem in BookCopiesCommands" />
     <MESSAGE value="try new branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="try new branch" />
+    <MESSAGE value="try new branch 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="try new branch 3" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
