@@ -64,7 +64,7 @@ Add:
 2. Add map of authors to book
 
 1. Repeat the cause of exception only
-2. Books copies
+2. ~~Books copies~~
 3. Clients (Work with clients)
 4. ~~Add book new copies to BookCommand~~
 5. Check exception message in linking method
@@ -73,6 +73,10 @@ Add:
 8. add remove, insert to Menu class commands
 9. ~~Remove book copy item~~
 10. ~~Remove book with all copies~~
+11. ~~Add exceptions for interruption~~
+12. Moving find from ItemList to Menu - ~~for BookCoomands~~, AuthorCommands, BookCopies
+13. Add abstract checking during entering data in Menu
+14. Update in BookCommands with new find
 
 
 

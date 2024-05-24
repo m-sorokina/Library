@@ -17,7 +17,6 @@ public class BookCopiesCommands extends Menu {
         add("Add item(s)", 2, this::addItem);
         add("Remove item", 3, this::removeItem);
         add("Print book copies numbers", 4, this::printBookCopies);
-        add("Return to previous menu", 0, null);
         setTitle("Book copies entry:");
     }
 
@@ -36,9 +35,8 @@ public class BookCopiesCommands extends Menu {
         int bookCopiesMaxNumber = book.findBookCopies().stream()
                 .mapToInt(BookCopy::getCopyNumber)
                 .max().orElse(0) + 1;
-        System.out.println(bookCopiesMaxNumber);
         IntStream stream = IntStream.range(bookCopiesMaxNumber,
-                (bookCopiesMaxNumber + enterInt("Enter number of book's copies: ")));
+                (bookCopiesMaxNumber + enterInt("Enter quantity of added book's copies: ")));
         stream.forEach(number -> getList().add(new BookCopy(book, number)));
         System.out.println(book);
         return true;
@@ -54,7 +52,7 @@ public class BookCopiesCommands extends Menu {
                             bookCopy.getCopyNumber() == bookCopyNumber)
                     .findAny()
                     .orElseThrow(() ->
-                            new WrongValueException("The book copy with entered number was not found"));
+                            new WrongValueException("Book copy with entered number was not found"));
             System.out.println(book);
         } catch (WrongValueException e) {
             System.out.println(e.getMessage());
@@ -67,7 +65,6 @@ public class BookCopiesCommands extends Menu {
         System.out.println(book);
         System.out.print("Available copy numbers: ");
         book.findBookCopies().forEach(System.out::print);
-        System.out.print("\b  ");
         System.out.println();
         return true;
     }

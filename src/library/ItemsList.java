@@ -1,8 +1,6 @@
 package library;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import exceptions.CommandCancelException;
-import menu.Menu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,12 +59,10 @@ public class ItemsList<T> {
     }
 
     public T find(Integer id) {
-        return listOf.stream().filter(item -> ((Item) item).getId().equals(id)).findAny().
-                orElseGet(() -> {
-                    Integer value  = (Menu.enterInt("Wrong id, please repeat, 'Enter' to exit: "));
-                    if (value == Menu.COMMAND_CANCEL){throw new CommandCancelException();}
-                    return find(value);
-                });
+        return listOf.stream()
+                .filter(item -> ((Item) item).getId().equals(id))
+                .findAny().
+                orElse(null);
     }
 
     public List<T> find(String namePart) {

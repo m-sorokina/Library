@@ -3,60 +3,82 @@ package commands;
 import library.ItemsList;
 import menu.Menu;
 
-public class MenuCommands<T> extends Menu {
+public abstract class MenuCommands<T> extends Menu {
 
     public MenuCommands() {
         super();
         add("Print all", 1, this::printAll);
-        add("Add item", this::addItem);
-        add("Remove item", this::removeItem);
-        add("Edit item", this::editItem);
+        add("Add item", this::add);
+        add("Remove item", this::remove);
+        add("Edit item", this::edit);
         add("Print item", this::printItem);
         add("Find by name", this::findByName);
     }
 
-    public ItemsList<T> getList() {
-        return null;
+    public abstract ItemsList<T> getList();
+
+    public abstract void addItem();
+
+    public abstract void editItem(T item);
+
+    public Boolean add() {
+        try{
+            addItem();
+        }
+        catch (Exception ignored) {}
+        return true;
+    }
+
+    public Boolean edit() {
+        try {
+            T item = find(getList(), "Enter id: ");
+            System.out.println(item);
+            editItem(item);
+        }
+        catch(Exception ignored){}
+        return true;
     }
 
     public Boolean printAll() {
-        System.out.println("-".repeat(30));
-        if (getList().getTitle() != null && !getList().getTitle().trim().isEmpty()) {
-            println(getList().getListOf(), getList().getTitle());
-        } else {
-            println(getList().getListOf());
+        try {
+            System.out.println("-".repeat(30));
+            if (getList().getTitle() != null && !getList().getTitle().trim().isEmpty()) {
+                println(getList().getListOf(), getList().getTitle());
+            } else {
+                println(getList().getListOf());
+            }
         }
+        catch (Exception ignored){}
         return true;
     }
 
-//    public Boolean printAll(String title) {
-//        System.out.println("-".repeat(30));
-//        println(getList().getListOf(), title);
-//        return true;
-//    }
 
-
-    public Boolean addItem() {
+    public Boolean remove() {
+        try{
+            T item = find(getList(), "Enter id: ");
+            removeItem(item);
+        }
+        catch (Exception ignored){}
         return true;
     }
-
-    public Boolean removeItem() {
-        getList().remove(getList().find(enterInt("Enter id: ")));
-        return true;
+    public void removeItem(T item) {
+            getList().remove(item);
     }
 
-    public Boolean editItem() {
-        T item = getList().find(enterInt("Enter id: "));
-        return true;
-    }
 
     public Boolean printItem() {
-        System.out.println(getList().find(enterInt("Enter id: ")));
+        try {
+            System.out.println(getList().find(enterInt("Enter id: ")));
+        }
+        catch (Exception ignored){}
         return true;
     }
 
     public Boolean findByName() {
-        println(getList().find(enterString("Enter name or part of name: ")));
+        try {
+            println(getList().find(enterString("Enter name or part of name: ")));
+        }
+        catch (Exception ignored) {}
         return true;
     }
 

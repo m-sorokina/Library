@@ -10,7 +10,6 @@ public class LibCatalogMenu extends Menu{
             new AuthorCommands().run(); return true;});
         add("Books list", () -> {
             new BookCommands().run(); return true;});
-        add("Return to previous menu", 0, null);
         setTitle("Library catalog:");
     }
 

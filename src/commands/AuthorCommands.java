@@ -11,7 +11,6 @@ public class AuthorCommands extends MenuCommands<Author> {
 
     public AuthorCommands() {
         super();
-        add("Return to previous menu", 0, null);
         setTitle("Authors entry:");
     }
 
@@ -20,7 +19,7 @@ public class AuthorCommands extends MenuCommands<Author> {
         return Main.lib.getAuthors();
     }
 
-    public Boolean removeItem() {
+    public void removeItem() {
         Integer id = enterInt("Enter id: ");
         if (Main.lib.getBooks().getListOf().stream()
                 .anyMatch(book ->
@@ -29,10 +28,9 @@ public class AuthorCommands extends MenuCommands<Author> {
         } else {
             getList().remove(getList().find(id));
         }
-        return true;
     }
 
-    public Boolean addItem() {
+    public void addItem() {
         try {
             Author author = new Author();
             author.setName(enterString("Enter last name: "));
@@ -42,20 +40,17 @@ public class AuthorCommands extends MenuCommands<Author> {
         } catch (CommandCancelException ignored) {
 
         }
-        return true;
     }
 
-    public Boolean editItem() {
-        Author author = getList().find(enterInt("Enter id: "));
+    public void editItem(Author author) {
         if (author == null) {
             System.out.println("Id was not found");
-            return true;
+            return;
         }
         System.out.println(author);
         author.setName(updateString("Enter last name: ", author.getName()));
         author.setFirstName(updateString("Enter first name: ", author.getFirstName()));
         System.out.println(author);
-        return true;
     }
 
 }

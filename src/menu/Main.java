@@ -18,6 +18,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Library project v1.2");
+        System.out.println("Press 'Enter' to exit menu or command");
 
         lib = deserializeLib(filename);
 

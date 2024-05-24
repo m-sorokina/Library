@@ -81,14 +81,13 @@ public class Book extends Item {
                 getCopiesNumbers());
     }
     private Boolean checkYear(int year) {
-
         return (year < 1900 || year > (new LocalDate()).getYear());
     }
 
     public List<BookCopy> findBookCopies(){
         return Main.lib.getBookCopies().getListOf().stream()
                 .filter(bookCopy ->
-                        bookCopy.getBook().getId().equals(this.getId()))
+                        bookCopy.getBook().getId().equals(getId()))
                 .toList();
     }
 

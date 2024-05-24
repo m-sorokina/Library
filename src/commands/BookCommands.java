@@ -1,6 +1,5 @@
 package commands;
 
-import exceptions.CommandCancelException;
 import exceptions.WrongValueException;
 import library.*;
 import menu.Main;
@@ -11,14 +10,13 @@ public class BookCommands extends MenuCommands<Book> {
 
     public BookCommands() {
         super();
-        add("Find all books by author's name", this::findAllBooksByAuthor);
+        add("Find all books by author's id", this::findAllBooksByAuthor);
         add("Print author's list", () -> new AuthorCommands().printAll());
         add("Print genre list", Genre::genreToPrint);
         add("Book copies entry", () -> {
             new BookCopiesCommands().run();
             return true;
         });
-        add("Return to previous menu", 0, null);
         setTitle("Books entry:");
     }
 
@@ -29,11 +27,11 @@ public class BookCommands extends MenuCommands<Book> {
     }
 
     @Override
-    public Boolean addItem() {
+    public void addItem() {
         try {
             Book book = new Book();
             book.setName(enterString("Enter book title: "));
-            book.setAuthor(Main.lib.getAuthors().find(enterInt("Enter author's id: ")));
+            book.setAuthor(find(Main.lib.getAuthors(), "Enter author's id: "));
             book.setGenre(Genre.toGenre(enterInt("Enter genre id: ")));
             book.setYear(enterInt("Enter year: "));
             getList().add(book);
@@ -42,15 +40,11 @@ public class BookCommands extends MenuCommands<Book> {
             System.out.println(book);
         } catch (WrongValueException e) {
             System.out.println(e.getMessage());
-        } catch (CommandCancelException ignored) {
         }
-        return true;
     }
 
-    public Boolean editItem() {
+    public void editItem(Book book) {
         try {
-            Book book = getList().find(enterInt("Enter book id: "));
-            System.out.println(book);
             book.setName(updateString("Enter book title: ", book.getName()));
             book.setAuthor(Main.lib.getAuthors().find(updateInt("Enter author's id: ", book.getAuthor().getId())));
             book.setGenre(Genre.toGenre(updateInt("Enter genre id: ", book.getGenre().ordinal())));
@@ -59,19 +53,20 @@ public class BookCommands extends MenuCommands<Book> {
         } catch (WrongValueException e) {
             System.out.println(e.getMessage());
         }
-        return true;
     }
 
     public Boolean findAllBooksByAuthor() {
-        Author author = Main.lib.getAuthors().find(enterInt("Enter author's id: "));
-        println(getList().getListOf().stream()
-                .filter(book -> book.getAuthor() == author)
-                .toList());
+        try {
+            Author author = find(Main.lib.getAuthors(),"Enter author's id: ");
+            println(getList().getListOf().stream()
+                    .filter(book -> book.getAuthor() == author)
+                    .toList());
+        } catch (Exception ignored) {
+        }
         return true;
     }
 
-    public Boolean removeItem() {
-        Book book = getList().find(enterInt("Enter id: "));
+    public void removeItem(Book book) {
         int bookCopies = book.getCopiesNumbers();
         if (bookCopies > 0) {
             System.out.println("Book can't be removed. Some books copies are still available in the library");
@@ -85,10 +80,6 @@ public class BookCommands extends MenuCommands<Book> {
         } else {
             getList().remove(book);
         }
-        return true;
     }
-
-
-
 
 }

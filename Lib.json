@@ -123,11 +123,7 @@
       "title" : "The Three Musketeers"
     }, {
       "id" : 12,
-      "author" : {
-        "id" : 2,
-        "first name" : "Isaak",
-        "last name" : "Asimov"
-      },
+      "author" : null,
       "genre" : "NOT_DEFINED",
       "year" : 2022,
       "copiesNumbers" : 7,
@@ -459,11 +455,7 @@
       "id" : 18,
       "book" : {
         "id" : 12,
-        "author" : {
-          "id" : 2,
-          "first name" : "Isaak",
-          "last name" : "Asimov"
-        },
+        "author" : null,
         "genre" : "NOT_DEFINED",
         "year" : 2022,
         "copiesNumbers" : 7,
@@ -523,11 +515,7 @@
       "id" : 23,
       "book" : {
         "id" : 12,
-        "author" : {
-          "id" : 2,
-          "first name" : "Isaak",
-          "last name" : "Asimov"
-        },
+        "author" : null,
         "genre" : "NOT_DEFINED",
         "year" : 2022,
         "copiesNumbers" : 7,
@@ -539,11 +527,7 @@
       "id" : 24,
       "book" : {
         "id" : 12,
-        "author" : {
-          "id" : 2,
-          "first name" : "Isaak",
-          "last name" : "Asimov"
-        },
+        "author" : null,
         "genre" : "NOT_DEFINED",
         "year" : 2022,
         "copiesNumbers" : 7,
@@ -555,11 +539,7 @@
       "id" : 26,
       "book" : {
         "id" : 12,
-        "author" : {
-          "id" : 2,
-          "first name" : "Isaak",
-          "last name" : "Asimov"
-        },
+        "author" : null,
         "genre" : "NOT_DEFINED",
         "year" : 2022,
         "copiesNumbers" : 7,
@@ -571,11 +551,7 @@
       "id" : 27,
       "book" : {
         "id" : 12,
-        "author" : {
-          "id" : 2,
-          "first name" : "Isaak",
-          "last name" : "Asimov"
-        },
+        "author" : null,
         "genre" : "NOT_DEFINED",
         "year" : 2022,
         "copiesNumbers" : 7,
@@ -587,11 +563,7 @@
       "id" : 28,
       "book" : {
         "id" : 12,
-        "author" : {
-          "id" : 2,
-          "first name" : "Isaak",
-          "last name" : "Asimov"
-        },
+        "author" : null,
         "genre" : "NOT_DEFINED",
         "year" : 2022,
         "copiesNumbers" : 7,
@@ -603,11 +575,7 @@
       "id" : 29,
       "book" : {
         "id" : 12,
-        "author" : {
-          "id" : 2,
-          "first name" : "Isaak",
-          "last name" : "Asimov"
-        },
+        "author" : null,
         "genre" : "NOT_DEFINED",
         "year" : 2022,
         "copiesNumbers" : 7,
