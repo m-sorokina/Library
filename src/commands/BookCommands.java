@@ -46,7 +46,7 @@ public class BookCommands extends MenuCommands<Book> {
     public void editItem(Book book) {
         try {
             book.setName(updateString("Enter book title: ", book.getName()));
-            book.setAuthor(Main.lib.getAuthors().find(updateInt("Enter author's id: ", book.getAuthor().getId())));
+            book.setAuthor(find(Main.lib.getAuthors(), updateInt("Enter author's id: ", book.getAuthor().getId())));
             book.setGenre(Genre.toGenre(updateInt("Enter genre id: ", book.getGenre().ordinal())));
             book.setYear(updateInt("Enter year: ", book.getYear()));
             System.out.println(book);

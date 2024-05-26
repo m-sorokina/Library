@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="try new branch 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lib.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/BookCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "marina",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/IdeaProjects/Sbapp",
+    "last_opened_file_path": "C:/Users/USER/IdeaProjects/Library",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -182,8 +187,27 @@
       <option name="project" value="LOCAL" />
       <updated>1716576901332</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="try new branch 3">
+      <option name="closed" value="true" />
+      <created>1716577395309</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716577395309</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Authors and AuthorsCommands were created" />

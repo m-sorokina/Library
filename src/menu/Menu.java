@@ -167,4 +167,9 @@ public class Menu {
         return (item == null) ? find(list, "Wrong id, please repeat, 'Enter' to exit: ") : item;
     }
 
+    public static <T> T find(ItemsList<T> list, Integer id) {
+        T item = list.find(id);
+        return (item == null) ? find(list, "Wrong id, please repeat, 'Enter' to exit: ") : item;
+    }
+
 }

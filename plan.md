@@ -74,10 +74,11 @@ Add:
 9. ~~Remove book copy item~~
 10. ~~Remove book with all copies~~
 11. ~~Add exceptions for interruption~~
-12. Moving find from ItemList to Menu - ~~for BookCoomands~~, AuthorCommands, BookCopies
+12. Moving find from ItemList to Menu - ~~for BookCoomands, AuthorCommands, BookCopies~~
 13. Add abstract checking during entering data in Menu
 14. Update in BookCommands with new find
-
+15. Add unit tests to project
+16. Add default meaning to items in case of wrong data values
 
 Additional branch
 =======

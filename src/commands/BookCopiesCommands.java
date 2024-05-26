@@ -30,7 +30,7 @@ public class BookCopiesCommands extends Menu {
     }
 
     public Boolean addItem() {
-        Book book = Main.lib.getBooks().find(enterInt("Enter book id: "));
+        Book book = find(Main.lib.getBooks(), enterInt("Enter book id: "));
         System.out.println(book);
         int bookCopiesMaxNumber = book.findBookCopies().stream()
                 .mapToInt(BookCopy::getCopyNumber)
@@ -44,7 +44,7 @@ public class BookCopiesCommands extends Menu {
 
     public Boolean removeItem() {
         try {
-            Book book = Main.lib.getBooks().find(enterInt("Enter book id: "));
+            Book book = find(Main.lib.getBooks(), enterInt("Enter book id: "));
             System.out.println(book);
             Integer bookCopyNumber = enterInt("Enter book copy number: ");
             book.findBookCopies().stream()
@@ -61,7 +61,7 @@ public class BookCopiesCommands extends Menu {
     }
 
     public Boolean printBookCopies() {
-        Book book = Main.lib.getBooks().find(enterInt("Enter book id: "));
+        Book book = find(Main.lib.getBooks(), enterInt("Enter book id: "));
         System.out.println(book);
         System.out.print("Available copy numbers: ");
         book.findBookCopies().forEach(System.out::print);
