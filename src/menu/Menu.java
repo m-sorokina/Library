@@ -2,6 +2,7 @@ package menu;
 
 import exceptions.CommandCancelException;
 import library.ItemsList;
+import org.joda.time.LocalDate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,8 @@ public class Menu {
     public final static String separatorLine = "-".repeat(30);
 
     static Scanner in = new Scanner(System.in);
+
+    public final static String dateFormat = "dd.MM.yyyy";
 
 
     static public class Item {
@@ -160,6 +163,14 @@ public class Menu {
         System.out.printf("%s%s%nNew value: ", prompt, value);
         String newValue = in.nextLine();
         return (newValue.isEmpty() || newValue.isBlank()) ? value : newValue;
+    }
+
+    static  public LocalDate enterDate(String prompt){
+        return LocalDate.parse(enterString(prompt));
+    }
+
+    static  public LocalDate updateDate(String prompt, LocalDate date){
+        return LocalDate.parse(updateString(prompt, date.toString(dateFormat)));
     }
 
     public static <T> T find(ItemsList<T> list, String prompt) {

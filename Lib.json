@@ -665,5 +665,34 @@
       "copyBookStatus" : null
     } ],
     "list title" : ""
+  },
+  "readers" : {
+    "list" : [ {
+      "id" : 1,
+      "first name" : "Joe",
+      "last name" : "Black",
+      "date of birth" : [ 1980, 1, 5 ]
+    }, {
+      "id" : 2,
+      "first name" : "Darth",
+      "last name" : "Vader",
+      "date of birth" : [ 1900, 10, 25 ]
+    }, {
+      "id" : 3,
+      "first name" : "Arthur",
+      "last name" : "King",
+      "date of birth" : [ 1990, 12, 14 ]
+    }, {
+      "id" : 4,
+      "first name" : "Clotho",
+      "last name" : "Moirai",
+      "date of birth" : [ 1999, 4, 22 ]
+    }, {
+      "id" : 5,
+      "first name" : "Zeus",
+      "last name" : "Godd",
+      "date of birth" : [ 1995, 2, 13 ]
+    } ],
+    "list title" : ""
   }
 }

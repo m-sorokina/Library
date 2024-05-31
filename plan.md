@@ -66,19 +66,29 @@ Add:
 1. Repeat the cause of exception only
 2. ~~Books copies~~
 3. Clients (Work with clients)
+4. ``` Client part
+   ~~1. class Reader {id, name, last name, date of birth}~~
+   2. menu items 
+   {Reader list: add, delete, update, print all}
+   {Books log: take, return, print all by client}
+   {Find book: by name, by id, by author, show book status}
+   {Report: show all "on hand", show all in due, show all available}
+   ```
 4. ~~Add book new copies to BookCommand~~
 5. Check exception message in linking method
 6. ~~rewrite add copies to separate class extends MenuCommands~~
-7. think about find book and print it - if it is better to make general method
+7. ~~think about find book and print it - if it is better to make general method~~
 8. add remove, insert to Menu class commands
 9. ~~Remove book copy item~~
 10. ~~Remove book with all copies~~
 11. ~~Add exceptions for interruption~~
-12. Moving find from ItemList to Menu - ~~for BookCoomands, AuthorCommands, BookCopies~~
+12. ~~Moving find from ItemList to Menu - for BookCoomands, AuthorCommands, BookCopies~~
 13. Add abstract checking during entering data in Menu
-14. Update in BookCommands with new find
+14. ~~Update in BookCommands with new find~~
 15. Add unit tests to project
 16. Add default meaning to items in case of wrong data values
+17. Reader: write addItem, editItem
+
 
 Additional branch
 =======

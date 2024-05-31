@@ -1,11 +1,15 @@
 package library;
 
+import org.joda.time.LocalDate;
+
 public class Library {
     private final ItemsList<Book> books;
     private ItemsList<Client> clients;
     private final ItemsList<Author> authors;
 
     public ItemsList<BookCopy> bookCopies;
+
+    public ItemsList<Reader> readers;
 
     public Library() {
         authors = new ItemsList<>("AUTHORS LIST");
@@ -23,7 +27,11 @@ public class Library {
         bookCopies.add(new BookCopy(books.getItem(1), 2));
         bookCopies.add(new BookCopy(books.getItem(2), 1));
 
-        //        clients = new ItemsList<>();
+        readers = new ItemsList<>();
+        readers.add(new Reader("Joe", "Black", new LocalDate(1980, 1, 5)));
+        readers.add(new Reader("Darth", "Vader", new LocalDate(1900, 10, 25)));
+        readers.add(new Reader("Arthur", "King", new LocalDate(1990, 12, 14)));
+
     }
 
     public ItemsList<Author> getAuthors() {
@@ -68,6 +76,10 @@ public class Library {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public ItemsList<Reader> getReaders() {
+        return readers;
     }
 
 

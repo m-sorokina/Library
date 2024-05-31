@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="try new branch 3">
+    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="moving find from ItemList to Menu: BookCopies">
+      <change afterPath="$PROJECT_DIR$/src/commands/ReaderCommands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/library/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu/WorkWithReadersMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lib.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/BookCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,7 +68,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "marina",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/IdeaProjects/Library",
+    "last_opened_file_path": "C:/Users/USER/IdeaProjects/repairshop",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -195,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716577395309</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="moving find from ItemList to Menu: BookCopies">
+      <option name="closed" value="true" />
+      <created>1716752138387</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716752138387</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +229,8 @@
     <MESSAGE value="findBookCopies added&#10;refactor addItem in BookCopiesCommands" />
     <MESSAGE value="try new branch" />
     <MESSAGE value="try new branch 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="try new branch 3" />
+    <MESSAGE value="moving find from ItemList to Menu: BookCopies" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving find from ItemList to Menu: BookCopies" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
