@@ -34,7 +34,7 @@ public class BookCopiesCommands extends Menu {
         System.out.println(book);
         int bookCopiesMaxNumber = book.findBookCopies().stream()
                 .mapToInt(BookCopy::getCopyNumber)
-                .max().orElse(0) + 1;
+                .max().orElse((book.getId() * 1000)) + 1;
         IntStream stream = IntStream.range(bookCopiesMaxNumber,
                 (bookCopiesMaxNumber + enterInt("Enter quantity of added book's copies: ")));
         stream.forEach(number -> getList().add(new BookCopy(book, number)));

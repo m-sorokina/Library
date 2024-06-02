@@ -1,6 +1,6 @@
 package commands;
 
-import exceptions.CommandCancelException;
+import exceptions.WrongValueException;
 import library.ItemsList;
 import library.Reader;
 import menu.Main;
@@ -26,8 +26,8 @@ public class ReaderCommands extends MenuCommands<Reader> {
             reader.setDateOfBirth(enterDate("Enter date of birth in format {yyyy-mm-dd}: "));
             getList().add(reader);
             System.out.println(reader);
-        } catch (CommandCancelException ignored) {
-
+        } catch (WrongValueException e) {
+            System.out.println(e.getMessage());
         }
 
     }
@@ -38,11 +38,15 @@ public class ReaderCommands extends MenuCommands<Reader> {
             System.out.println("Id was not found");
             return;
         }
-        System.out.println(reader);
-        reader.setName(updateString("Enter last name: ", reader.getName()));
-        reader.setFirstName(updateString("Enter first name: ", reader.getFirstName()));
-        reader.setDateOfBirth(updateDate("Enter date of birth in format {yyyy-mm-dd}: ", reader.getDateOfBirth()));
-        System.out.println(reader);
+        try {
+            reader.setName(updateString("Enter last name: ", reader.getName()));
+            reader.setFirstName(updateString("Enter first name: ", reader.getFirstName()));
+            reader.setDateOfBirth(updateDate("Enter date of birth in format {yyyy-mm-dd}: ", reader.getDateOfBirth()));
+            System.out.println(reader);
+        }
+        catch (WrongValueException e){
+            System.out.println(e.getMessage());
+        }
     }
 
 }

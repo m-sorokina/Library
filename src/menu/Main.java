@@ -57,6 +57,7 @@ public class Main {
             fileIn.close();
             lib.linkingAuthors();
             lib.linkingBooks();
+            lib.linkingBookLogsRecords();
             return lib;
         } catch (Exception e) {
             System.out.println(e.getMessage());

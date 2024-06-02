@@ -20,7 +20,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1950,
-      "copiesNumbers" : 2,
+      "copiesNumbers" : 6,
       "title" : "Foundation"
     }, {
       "id" : 3,
@@ -86,7 +86,7 @@
       },
       "genre" : "SCIENCE_FICTION",
       "year" : 1951,
-      "copiesNumbers" : 0,
+      "copiesNumbers" : 5,
       "title" : "The Illustrated Man"
     }, {
       "id" : 9,
@@ -143,6 +143,17 @@
       "year" : 2015,
       "copiesNumbers" : 3,
       "title" : "Pride and Prejudice"
+    }, {
+      "id" : 14,
+      "author" : {
+        "id" : 9,
+        "first name" : "Rafael",
+        "last name" : "Sabatini"
+      },
+      "genre" : "NOVELS",
+      "year" : 2021,
+      "copiesNumbers" : 5,
+      "title" : "Captain Blood"
     } ],
     "list title" : "BOOKS LIST"
   },
@@ -179,6 +190,10 @@
       "id" : 8,
       "first name" : "Jane",
       "last name" : "Austen"
+    }, {
+      "id" : 9,
+      "first name" : "Rafael",
+      "last name" : "Sabatini"
     } ],
     "list title" : "AUTHORS LIST"
   },
@@ -194,10 +209,10 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1950,
-        "copiesNumbers" : 2,
+        "copiesNumbers" : 6,
         "title" : "Foundation"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 2001,
       "copyBookStatus" : null
     }, {
       "id" : 2,
@@ -210,10 +225,10 @@
         },
         "genre" : "SCIENCE_FICTION",
         "year" : 1950,
-        "copiesNumbers" : 2,
+        "copiesNumbers" : 6,
         "title" : "Foundation"
       },
-      "copyNumber" : 2,
+      "copyNumber" : 2002,
       "copyBookStatus" : null
     }, {
       "id" : 3,
@@ -229,7 +244,7 @@
         "copiesNumbers" : 1,
         "title" : "Fahrenheit 451"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 3001,
       "copyBookStatus" : null
     }, {
       "id" : 4,
@@ -245,7 +260,7 @@
         "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 10001,
       "copyBookStatus" : null
     }, {
       "id" : 5,
@@ -261,7 +276,7 @@
         "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
-      "copyNumber" : 2,
+      "copyNumber" : 10002,
       "copyBookStatus" : null
     }, {
       "id" : 6,
@@ -277,7 +292,7 @@
         "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
-      "copyNumber" : 3,
+      "copyNumber" : 10003,
       "copyBookStatus" : null
     }, {
       "id" : 7,
@@ -293,7 +308,7 @@
         "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
-      "copyNumber" : 4,
+      "copyNumber" : 10004,
       "copyBookStatus" : null
     }, {
       "id" : 8,
@@ -309,7 +324,7 @@
         "copiesNumbers" : 5,
         "title" : "2010 Odyssey Two"
       },
-      "copyNumber" : 5,
+      "copyNumber" : 10005,
       "copyBookStatus" : null
     }, {
       "id" : 9,
@@ -325,7 +340,7 @@
         "copiesNumbers" : 2,
         "title" : "The Left Hand of Darkness"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 5001,
       "copyBookStatus" : null
     }, {
       "id" : 10,
@@ -341,7 +356,7 @@
         "copiesNumbers" : 2,
         "title" : "The Left Hand of Darkness"
       },
-      "copyNumber" : 2,
+      "copyNumber" : 5002,
       "copyBookStatus" : null
     }, {
       "id" : 11,
@@ -357,7 +372,7 @@
         "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 7001,
       "copyBookStatus" : null
     }, {
       "id" : 12,
@@ -373,7 +388,7 @@
         "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
-      "copyNumber" : 2,
+      "copyNumber" : 7002,
       "copyBookStatus" : null
     }, {
       "id" : 13,
@@ -389,7 +404,7 @@
         "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
-      "copyNumber" : 3,
+      "copyNumber" : 7003,
       "copyBookStatus" : null
     }, {
       "id" : 14,
@@ -405,7 +420,7 @@
         "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
-      "copyNumber" : 4,
+      "copyNumber" : 7004,
       "copyBookStatus" : null
     }, {
       "id" : 15,
@@ -421,7 +436,7 @@
         "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
-      "copyNumber" : 5,
+      "copyNumber" : 7005,
       "copyBookStatus" : null
     }, {
       "id" : 16,
@@ -437,7 +452,7 @@
         "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
-      "copyNumber" : 6,
+      "copyNumber" : 7006,
       "copyBookStatus" : null
     }, {
       "id" : 17,
@@ -453,7 +468,7 @@
         "copiesNumbers" : 7,
         "title" : "Dandelion Wine"
       },
-      "copyNumber" : 7,
+      "copyNumber" : 7007,
       "copyBookStatus" : null
     }, {
       "id" : 18,
@@ -469,7 +484,7 @@
         "copiesNumbers" : 7,
         "title" : "New try"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 12001,
       "copyBookStatus" : null
     }, {
       "id" : 20,
@@ -485,7 +500,7 @@
         "copiesNumbers" : 3,
         "title" : "Pride and Prejudice"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 13001,
       "copyBookStatus" : null
     }, {
       "id" : 21,
@@ -501,7 +516,7 @@
         "copiesNumbers" : 3,
         "title" : "Pride and Prejudice"
       },
-      "copyNumber" : 2,
+      "copyNumber" : 13002,
       "copyBookStatus" : null
     }, {
       "id" : 22,
@@ -517,7 +532,7 @@
         "copiesNumbers" : 3,
         "title" : "Pride and Prejudice"
       },
-      "copyNumber" : 3,
+      "copyNumber" : 13003,
       "copyBookStatus" : null
     }, {
       "id" : 23,
@@ -533,7 +548,7 @@
         "copiesNumbers" : 7,
         "title" : "New try"
       },
-      "copyNumber" : 2,
+      "copyNumber" : 12002,
       "copyBookStatus" : null
     }, {
       "id" : 24,
@@ -549,7 +564,7 @@
         "copiesNumbers" : 7,
         "title" : "New try"
       },
-      "copyNumber" : 3,
+      "copyNumber" : 12003,
       "copyBookStatus" : null
     }, {
       "id" : 26,
@@ -565,7 +580,7 @@
         "copiesNumbers" : 7,
         "title" : "New try"
       },
-      "copyNumber" : 5,
+      "copyNumber" : 12005,
       "copyBookStatus" : null
     }, {
       "id" : 27,
@@ -581,7 +596,7 @@
         "copiesNumbers" : 7,
         "title" : "New try"
       },
-      "copyNumber" : 6,
+      "copyNumber" : 12006,
       "copyBookStatus" : null
     }, {
       "id" : 28,
@@ -597,7 +612,7 @@
         "copiesNumbers" : 7,
         "title" : "New try"
       },
-      "copyNumber" : 7,
+      "copyNumber" : 12007,
       "copyBookStatus" : null
     }, {
       "id" : 29,
@@ -613,7 +628,7 @@
         "copiesNumbers" : 7,
         "title" : "New try"
       },
-      "copyNumber" : 8,
+      "copyNumber" : 12008,
       "copyBookStatus" : null
     }, {
       "id" : 30,
@@ -629,7 +644,7 @@
         "copiesNumbers" : 3,
         "title" : "The Three Musketeers"
       },
-      "copyNumber" : 1,
+      "copyNumber" : 11001,
       "copyBookStatus" : null
     }, {
       "id" : 31,
@@ -645,7 +660,7 @@
         "copiesNumbers" : 3,
         "title" : "The Three Musketeers"
       },
-      "copyNumber" : 2,
+      "copyNumber" : 11002,
       "copyBookStatus" : null
     }, {
       "id" : 32,
@@ -661,7 +676,231 @@
         "copiesNumbers" : 3,
         "title" : "The Three Musketeers"
       },
-      "copyNumber" : 3,
+      "copyNumber" : 11003,
+      "copyBookStatus" : null
+    }, {
+      "id" : 33,
+      "book" : {
+        "id" : 2,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1950,
+        "copiesNumbers" : 6,
+        "title" : "Foundation"
+      },
+      "copyNumber" : 2003,
+      "copyBookStatus" : null
+    }, {
+      "id" : 34,
+      "book" : {
+        "id" : 2,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1950,
+        "copiesNumbers" : 6,
+        "title" : "Foundation"
+      },
+      "copyNumber" : 2004,
+      "copyBookStatus" : null
+    }, {
+      "id" : 35,
+      "book" : {
+        "id" : 2,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1950,
+        "copiesNumbers" : 6,
+        "title" : "Foundation"
+      },
+      "copyNumber" : 2005,
+      "copyBookStatus" : null
+    }, {
+      "id" : 36,
+      "book" : {
+        "id" : 2,
+        "author" : {
+          "id" : 2,
+          "first name" : "Isaak",
+          "last name" : "Asimov"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1950,
+        "copiesNumbers" : 6,
+        "title" : "Foundation"
+      },
+      "copyNumber" : 2006,
+      "copyBookStatus" : null
+    }, {
+      "id" : 37,
+      "book" : {
+        "id" : 8,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1951,
+        "copiesNumbers" : 5,
+        "title" : "The Illustrated Man"
+      },
+      "copyNumber" : 8001,
+      "copyBookStatus" : null
+    }, {
+      "id" : 38,
+      "book" : {
+        "id" : 8,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1951,
+        "copiesNumbers" : 5,
+        "title" : "The Illustrated Man"
+      },
+      "copyNumber" : 8002,
+      "copyBookStatus" : null
+    }, {
+      "id" : 39,
+      "book" : {
+        "id" : 8,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1951,
+        "copiesNumbers" : 5,
+        "title" : "The Illustrated Man"
+      },
+      "copyNumber" : 8003,
+      "copyBookStatus" : null
+    }, {
+      "id" : 40,
+      "book" : {
+        "id" : 8,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1951,
+        "copiesNumbers" : 5,
+        "title" : "The Illustrated Man"
+      },
+      "copyNumber" : 8004,
+      "copyBookStatus" : null
+    }, {
+      "id" : 41,
+      "book" : {
+        "id" : 8,
+        "author" : {
+          "id" : 1,
+          "first name" : "Ray",
+          "last name" : "Bradbury"
+        },
+        "genre" : "SCIENCE_FICTION",
+        "year" : 1951,
+        "copiesNumbers" : 5,
+        "title" : "The Illustrated Man"
+      },
+      "copyNumber" : 8005,
+      "copyBookStatus" : null
+    }, {
+      "id" : 42,
+      "book" : {
+        "id" : 14,
+        "author" : {
+          "id" : 9,
+          "first name" : "Rafael",
+          "last name" : "Sabatini"
+        },
+        "genre" : "NOVELS",
+        "year" : 2021,
+        "copiesNumbers" : 5,
+        "title" : "Captain Blood"
+      },
+      "copyNumber" : 14001,
+      "copyBookStatus" : null
+    }, {
+      "id" : 43,
+      "book" : {
+        "id" : 14,
+        "author" : {
+          "id" : 9,
+          "first name" : "Rafael",
+          "last name" : "Sabatini"
+        },
+        "genre" : "NOVELS",
+        "year" : 2021,
+        "copiesNumbers" : 5,
+        "title" : "Captain Blood"
+      },
+      "copyNumber" : 14002,
+      "copyBookStatus" : null
+    }, {
+      "id" : 44,
+      "book" : {
+        "id" : 14,
+        "author" : {
+          "id" : 9,
+          "first name" : "Rafael",
+          "last name" : "Sabatini"
+        },
+        "genre" : "NOVELS",
+        "year" : 2021,
+        "copiesNumbers" : 5,
+        "title" : "Captain Blood"
+      },
+      "copyNumber" : 14003,
+      "copyBookStatus" : null
+    }, {
+      "id" : 45,
+      "book" : {
+        "id" : 14,
+        "author" : {
+          "id" : 9,
+          "first name" : "Rafael",
+          "last name" : "Sabatini"
+        },
+        "genre" : "NOVELS",
+        "year" : 2021,
+        "copiesNumbers" : 5,
+        "title" : "Captain Blood"
+      },
+      "copyNumber" : 14004,
+      "copyBookStatus" : null
+    }, {
+      "id" : 46,
+      "book" : {
+        "id" : 14,
+        "author" : {
+          "id" : 9,
+          "first name" : "Rafael",
+          "last name" : "Sabatini"
+        },
+        "genre" : "NOVELS",
+        "year" : 2021,
+        "copiesNumbers" : 5,
+        "title" : "Captain Blood"
+      },
+      "copyNumber" : 14005,
       "copyBookStatus" : null
     } ],
     "list title" : ""
@@ -693,6 +932,388 @@
       "last name" : "Godd",
       "date of birth" : [ 1995, 2, 13 ]
     } ],
-    "list title" : ""
+    "list title" : "READER LIST"
+  },
+  "bookLogsRecords" : {
+    "list" : [ {
+      "id" : 1,
+      "reader" : {
+        "id" : 2,
+        "first name" : "Darth",
+        "last name" : "Vader",
+        "date of birth" : [ 1900, 10, 25 ]
+      },
+      "bookCopy" : {
+        "id" : 3,
+        "book" : {
+          "id" : 3,
+          "author" : {
+            "id" : 1,
+            "first name" : "Ray",
+            "last name" : "Bradbury"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1951,
+          "copiesNumbers" : 1,
+          "title" : "Fahrenheit 451"
+        },
+        "copyNumber" : 3001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 4, 25 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 2,
+      "reader" : {
+        "id" : 2,
+        "first name" : "Darth",
+        "last name" : "Vader",
+        "date of birth" : [ 1900, 10, 25 ]
+      },
+      "bookCopy" : {
+        "id" : 3,
+        "book" : {
+          "id" : 3,
+          "author" : {
+            "id" : 1,
+            "first name" : "Ray",
+            "last name" : "Bradbury"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1951,
+          "copiesNumbers" : 1,
+          "title" : "Fahrenheit 451"
+        },
+        "copyNumber" : 3001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 5, 15 ],
+      "action" : "RETURN"
+    }, {
+      "id" : 3,
+      "reader" : {
+        "id" : 3,
+        "first name" : "Arthur",
+        "last name" : "King",
+        "date of birth" : [ 1990, 12, 14 ]
+      },
+      "bookCopy" : {
+        "id" : 1,
+        "book" : {
+          "id" : 2,
+          "author" : {
+            "id" : 2,
+            "first name" : "Isaak",
+            "last name" : "Asimov"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1950,
+          "copiesNumbers" : 6,
+          "title" : "Foundation"
+        },
+        "copyNumber" : 2001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 5, 25 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 4,
+      "reader" : {
+        "id" : 2,
+        "first name" : "Darth",
+        "last name" : "Vader",
+        "date of birth" : [ 1900, 10, 25 ]
+      },
+      "bookCopy" : {
+        "id" : 3,
+        "book" : {
+          "id" : 3,
+          "author" : {
+            "id" : 1,
+            "first name" : "Ray",
+            "last name" : "Bradbury"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1951,
+          "copiesNumbers" : 1,
+          "title" : "Fahrenheit 451"
+        },
+        "copyNumber" : 3001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 5, 25 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 6,
+      "reader" : {
+        "id" : 2,
+        "first name" : "Darth",
+        "last name" : "Vader",
+        "date of birth" : [ 1900, 10, 25 ]
+      },
+      "bookCopy" : {
+        "id" : 21,
+        "book" : {
+          "id" : 13,
+          "author" : {
+            "id" : 8,
+            "first name" : "Jane",
+            "last name" : "Austen"
+          },
+          "genre" : "NOVELS",
+          "year" : 2015,
+          "copiesNumbers" : 3,
+          "title" : "Pride and Prejudice"
+        },
+        "copyNumber" : 13002,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 5, 25 ],
+      "action" : "RETURN"
+    }, {
+      "id" : 7,
+      "reader" : {
+        "id" : 5,
+        "first name" : "Zeus",
+        "last name" : "Godd",
+        "date of birth" : [ 1995, 2, 13 ]
+      },
+      "bookCopy" : {
+        "id" : 9,
+        "book" : {
+          "id" : 5,
+          "author" : {
+            "id" : 4,
+            "first name" : "Ursula",
+            "last name" : "Le Guin"
+          },
+          "genre" : "FANTASY",
+          "year" : 1969,
+          "copiesNumbers" : 2,
+          "title" : "The Left Hand of Darkness"
+        },
+        "copyNumber" : 5001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 6, 1 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 8,
+      "reader" : {
+        "id" : 5,
+        "first name" : "Zeus",
+        "last name" : "Godd",
+        "date of birth" : [ 1995, 2, 13 ]
+      },
+      "bookCopy" : {
+        "id" : 11,
+        "book" : {
+          "id" : 7,
+          "author" : {
+            "id" : 1,
+            "first name" : "Ray",
+            "last name" : "Bradbury"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1957,
+          "copiesNumbers" : 7,
+          "title" : "Dandelion Wine"
+        },
+        "copyNumber" : 7001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 6, 1 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 9,
+      "reader" : {
+        "id" : 5,
+        "first name" : "Zeus",
+        "last name" : "Godd",
+        "date of birth" : [ 1995, 2, 13 ]
+      },
+      "bookCopy" : {
+        "id" : 30,
+        "book" : {
+          "id" : 11,
+          "author" : {
+            "id" : 7,
+            "first name" : "Alexandre",
+            "last name" : "Dumas"
+          },
+          "genre" : "HISTORICAL",
+          "year" : 1944,
+          "copiesNumbers" : 3,
+          "title" : "The Three Musketeers"
+        },
+        "copyNumber" : 11001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 5, 20 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 10,
+      "reader" : {
+        "id" : 2,
+        "first name" : "Darth",
+        "last name" : "Vader",
+        "date of birth" : [ 1900, 10, 25 ]
+      },
+      "bookCopy" : {
+        "id" : 1,
+        "book" : {
+          "id" : 2,
+          "author" : {
+            "id" : 2,
+            "first name" : "Isaak",
+            "last name" : "Asimov"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1950,
+          "copiesNumbers" : 6,
+          "title" : "Foundation"
+        },
+        "copyNumber" : 2001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 6, 2 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 11,
+      "reader" : {
+        "id" : 5,
+        "first name" : "Zeus",
+        "last name" : "Godd",
+        "date of birth" : [ 1995, 2, 13 ]
+      },
+      "bookCopy" : {
+        "id" : 11,
+        "book" : {
+          "id" : 7,
+          "author" : {
+            "id" : 1,
+            "first name" : "Ray",
+            "last name" : "Bradbury"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1957,
+          "copiesNumbers" : 7,
+          "title" : "Dandelion Wine"
+        },
+        "copyNumber" : 7001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 6, 2 ],
+      "action" : "RETURN"
+    }, {
+      "id" : 12,
+      "reader" : {
+        "id" : 3,
+        "first name" : "Arthur",
+        "last name" : "King",
+        "date of birth" : [ 1990, 12, 14 ]
+      },
+      "bookCopy" : {
+        "id" : 1,
+        "book" : {
+          "id" : 2,
+          "author" : {
+            "id" : 2,
+            "first name" : "Isaak",
+            "last name" : "Asimov"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1950,
+          "copiesNumbers" : 6,
+          "title" : "Foundation"
+        },
+        "copyNumber" : 2001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 6, 2 ],
+      "action" : "RETURN"
+    }, {
+      "id" : 13,
+      "reader" : {
+        "id" : 5,
+        "first name" : "Zeus",
+        "last name" : "Godd",
+        "date of birth" : [ 1995, 2, 13 ]
+      },
+      "bookCopy" : {
+        "id" : 9,
+        "book" : {
+          "id" : 5,
+          "author" : {
+            "id" : 4,
+            "first name" : "Ursula",
+            "last name" : "Le Guin"
+          },
+          "genre" : "FANTASY",
+          "year" : 1969,
+          "copiesNumbers" : 2,
+          "title" : "The Left Hand of Darkness"
+        },
+        "copyNumber" : 5001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 6, 2 ],
+      "action" : "RETURN"
+    }, {
+      "id" : 14,
+      "reader" : {
+        "id" : 4,
+        "first name" : "Clotho",
+        "last name" : "Moirai",
+        "date of birth" : [ 1999, 4, 22 ]
+      },
+      "bookCopy" : {
+        "id" : 42,
+        "book" : {
+          "id" : 14,
+          "author" : {
+            "id" : 9,
+            "first name" : "Rafael",
+            "last name" : "Sabatini"
+          },
+          "genre" : "NOVELS",
+          "year" : 2021,
+          "copiesNumbers" : 5,
+          "title" : "Captain Blood"
+        },
+        "copyNumber" : 14001,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 5, 20 ],
+      "action" : "TAKE"
+    }, {
+      "id" : 15,
+      "reader" : {
+        "id" : 4,
+        "first name" : "Clotho",
+        "last name" : "Moirai",
+        "date of birth" : [ 1999, 4, 22 ]
+      },
+      "bookCopy" : {
+        "id" : 5,
+        "book" : {
+          "id" : 10,
+          "author" : {
+            "id" : 5,
+            "first name" : "Arthur",
+            "last name" : "Clarke"
+          },
+          "genre" : "SCIENCE_FICTION",
+          "year" : 1982,
+          "copiesNumbers" : 5,
+          "title" : "2010 Odyssey Two"
+        },
+        "copyNumber" : 10002,
+        "copyBookStatus" : null
+      },
+      "dateOfAction" : [ 2024, 6, 2 ],
+      "action" : "TAKE"
+    } ],
+    "list title" : "LOG RECORDS"
   }
 }

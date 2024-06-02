@@ -1,5 +1,7 @@
 package library;
 
+import menu.Menu;
+
 public class BookCopy extends Item {
 
     private Book book;
@@ -36,7 +38,14 @@ public class BookCopy extends Item {
         return copyBookStatus;
     }
 
-    public String toString(){
+    public BookCopy findCopyByBookAndCopyNumber(Book book, int copyNumber) {
+        return book.findBookCopies().stream()
+                .filter(bookCopy -> bookCopy.getCopyNumber() == copyNumber)
+                .findFirst()
+                .orElseGet(() -> findCopyByBookAndCopyNumber(book, Menu.enterInt("Wrong copy number, please repeat, 'Enter' to exit: ")));
+    }
+
+    public String toString() {
         return String.format("%d ", getCopyNumber());
     }
 

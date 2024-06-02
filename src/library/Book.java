@@ -1,6 +1,8 @@
 package library;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import commands.BookLogsCommands;
 import exceptions.WrongValueException;
 import menu.Main;
 import org.joda.time.LocalDate;
@@ -61,30 +63,57 @@ public class Book extends Item {
     }
 
     public void setYear(int year) {
-        if (checkYear(year)){
+        if (checkYear(year)) {
             throw new WrongValueException("Entered year is wrong: " + year);
         }
         this.year = year;
     }
 
-    public int getCopiesNumbers(){
+    public int getCopiesNumbers() {
         return (int) Main.lib.getBookCopies().getListOf().stream()
                 .filter(bookCopy -> bookCopy.getBook().getId().equals(getId()))
                 .count();
     }
+    @JsonIgnore
+    public List<Integer> getAllCopiesNumbers() {
+        return Main.lib.getBookCopies().getListOf().stream()
+                .filter(bookCopy -> bookCopy.getBook().getId().equals(getId()))
+                .map(BookCopy::getCopyNumber)
+                .toList();
+    }
+    @JsonIgnore
+    public List<Integer> getAllCopiesNumbersAvailable() {
+        return getAllCopiesNumbers().stream()
+                .filter(copyNumber -> !new BookLogsCommands().bookCopiesOnHand().contains(copyNumber))
+                .toList();
+    }
+
+
     public String toString() {
         return super.toString()
-                + String.format(" %s, %s, %d, [copy numbers: %d]>",
+                + String.format(" %s, %s, %d, [copy numbers total: %d, all numbers: %s]>",
                 getAuthor(),
                 getGenre().toString(),
                 getYear(),
-                getCopiesNumbers());
+                getCopiesNumbers(),
+                getAllCopiesNumbers());
     }
+
+    public String toStringAvailableCopies() {
+        return super.toString()
+                + String.format(" %s, %s, %d, [copy numbers total: %d, available numbers: %s]>",
+                getAuthor(),
+                getGenre().toString(),
+                getYear(),
+                getCopiesNumbers(),
+                getAllCopiesNumbersAvailable());
+    }
+
     private Boolean checkYear(int year) {
         return (year < 1900 || year > (new LocalDate()).getYear());
     }
 
-    public List<BookCopy> findBookCopies(){
+    public List<BookCopy> findBookCopies() {
         return Main.lib.getBookCopies().getListOf().stream()
                 .filter(bookCopy ->
                         bookCopy.getBook().getId().equals(getId()))

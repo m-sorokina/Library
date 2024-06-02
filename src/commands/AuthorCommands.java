@@ -1,6 +1,6 @@
 package commands;
 
-import exceptions.CommandCancelException;
+import exceptions.WrongValueException;
 import library.Author;
 import library.ItemsList;
 import menu.Main;
@@ -37,8 +37,8 @@ public class AuthorCommands extends MenuCommands<Author> {
             author.setFirstName(enterString("Enter first name: "));
             getList().add(author);
             System.out.println(author);
-        } catch (CommandCancelException ignored) {
-
+        } catch (WrongValueException e) {
+            System.out.println(e.getMessage());
         }
     }
 
@@ -47,10 +47,13 @@ public class AuthorCommands extends MenuCommands<Author> {
             System.out.println("Id was not found");
             return;
         }
-        System.out.println(author);
-        author.setName(updateString("Enter last name: ", author.getName()));
-        author.setFirstName(updateString("Enter first name: ", author.getFirstName()));
-        System.out.println(author);
+        try {
+            author.setName(updateString("Enter last name: ", author.getName()));
+            author.setFirstName(updateString("Enter first name: ", author.getFirstName()));
+            System.out.println(author);
+        } catch (WrongValueException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
 }

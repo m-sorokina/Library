@@ -1,6 +1,7 @@
 package menu;
 
 import exceptions.CommandCancelException;
+import exceptions.WrongValueException;
 import library.ItemsList;
 import org.joda.time.LocalDate;
 
@@ -17,7 +18,7 @@ public class Menu {
 
     static Scanner in = new Scanner(System.in);
 
-    public final static String dateFormat = "dd.MM.yyyy";
+    public final static String dateFormat = "yyyy-MM-dd";
 
 
     static public class Item {
@@ -129,7 +130,7 @@ public class Menu {
     }
 
 
-    static public Integer enterInt(String prompt) {
+   public static Integer enterInt(String prompt) {
         String s = enterString(prompt);
         int value = tryEnterInt(s);
         if (value == WRONG_VALUE) {
@@ -165,12 +166,20 @@ public class Menu {
         return (newValue.isEmpty() || newValue.isBlank()) ? value : newValue;
     }
 
-    static  public LocalDate enterDate(String prompt){
-        return LocalDate.parse(enterString(prompt));
+    static public LocalDate enterDate(String prompt) {
+        try {
+            return LocalDate.parse(enterString(prompt));
+        } catch (Exception e) {
+            throw new WrongValueException("Date format is wrong.");
+        }
     }
 
-    static  public LocalDate updateDate(String prompt, LocalDate date){
-        return LocalDate.parse(updateString(prompt, date.toString(dateFormat)));
+    static public LocalDate updateDate(String prompt, LocalDate date) {
+        try {
+            return LocalDate.parse(updateString(prompt, date.toString(dateFormat)));
+        } catch (Exception e) {
+            throw new WrongValueException("Date format is wrong.");
+        }
     }
 
     public static <T> T find(ItemsList<T> list, String prompt) {
@@ -182,5 +191,6 @@ public class Menu {
         T item = list.find(id);
         return (item == null) ? find(list, "Wrong id, please repeat, 'Enter' to exit: ") : item;
     }
+
 
 }

@@ -35,7 +35,7 @@ public class BookCommands extends MenuCommands<Book> {
             book.setGenre(Genre.toGenre(enterInt("Enter genre id: ")));
             book.setYear(enterInt("Enter year: "));
             getList().add(book);
-            IntStream stream = IntStream.range(1, enterInt("Enter number of book's copies: ") + 1);
+            IntStream stream = IntStream.range(1 + (book.getId() * 1000), enterInt("Enter number of book's copies: ") + 1  + (book.getId() * 1000));
             stream.forEach(number -> Main.lib.getBookCopies().add(new BookCopy(book, number)));
             System.out.println(book);
         } catch (WrongValueException e) {

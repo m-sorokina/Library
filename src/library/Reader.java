@@ -6,7 +6,7 @@ import menu.Menu;
 import org.joda.time.LocalDate;
 
 
-public class Reader extends Item{
+public class Reader extends Item {
     @JsonProperty("first name")
     private String firstName;
     @JsonProperty("last name")

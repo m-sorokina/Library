@@ -10,6 +10,7 @@ public class Library {
     public ItemsList<BookCopy> bookCopies;
 
     public ItemsList<Reader> readers;
+    public ItemsList<BookLogsRecord> bookLogsRecords;
 
     public Library() {
         authors = new ItemsList<>("AUTHORS LIST");
@@ -27,10 +28,17 @@ public class Library {
         bookCopies.add(new BookCopy(books.getItem(1), 2));
         bookCopies.add(new BookCopy(books.getItem(2), 1));
 
-        readers = new ItemsList<>();
+        readers = new ItemsList<>("READER LIST");
         readers.add(new Reader("Joe", "Black", new LocalDate(1980, 1, 5)));
         readers.add(new Reader("Darth", "Vader", new LocalDate(1900, 10, 25)));
         readers.add(new Reader("Arthur", "King", new LocalDate(1990, 12, 14)));
+
+        bookLogsRecords = new ItemsList<>("LOG RECORDS");
+//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(2), new LocalDate(2024, 4, 25), BookLogsRecord.ActionTypes.TAKE));
+//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(2), new LocalDate(2024, 5, 15), BookLogsRecord.ActionTypes.RETURN));
+//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(2), new LocalDate(2024, 5, 15), BookLogsRecord.ActionTypes.TAKE));
+//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(0), new LocalDate(2024, 5, 15), BookLogsRecord.ActionTypes.TAKE));
+//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(2), bookCopies.getItem(1), new LocalDate(2024, 5, 25), BookLogsRecord.ActionTypes.TAKE));
 
     }
 
@@ -44,6 +52,13 @@ public class Library {
 
     public ItemsList<BookCopy> getBookCopies() {
         return bookCopies;
+    }
+
+    public ItemsList<Reader> getReaders() {
+        return readers;
+    }
+    public ItemsList<BookLogsRecord> getBookLogsRecords() {
+        return bookLogsRecords;
     }
 
     public void linkingAuthors() {
@@ -78,9 +93,30 @@ public class Library {
         }
     }
 
-    public ItemsList<Reader> getReaders() {
-        return readers;
+    public void linkingBookLogsRecords() {
+        try {
+            getBookLogsRecords()
+                    .getListOf()
+                    .forEach(bookLogsRecord -> {
+                        if (bookLogsRecord.getReader() != null)
+                            bookLogsRecord.setReader(getReaders().find(bookLogsRecord.getReader().getId()));
+                        else
+                            System.out.println("There is no reader for the book log record. Log record id: "
+                                    + bookLogsRecord.getId());
+                        if (bookLogsRecord.getBookCopy() != null)
+                            bookLogsRecord.setBookCopy(getBookCopies().find(bookLogsRecord.getBookCopy().getId()));
+                        else
+                            System.out.println("There is no book copy for the book log record. Log record id: "
+                                    + bookLogsRecord.getId());
+                    });
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
+
+
+
+
 
 
 
