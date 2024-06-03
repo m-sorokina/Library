@@ -79,5 +79,23 @@ Add:
 14. Update in BookCommands with new find
 
 
+Additional branch
+=======
+additional things
+
+список доработок
+! журнал
+! несколько авторов
+! дополнительные запросы
+?? можно в Commands добавить remove, update, insert
+??? Commands можно переписать над IListCommands
+??? разобраться с Optional
+https://www.baeldung.com/java-optional
+? разобраться с необрабатываемым исключением
+
+*** но лучше *****
+
+***** and once more ****
+
 
 

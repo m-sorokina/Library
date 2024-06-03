@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="findBookCopies added&#10;refactor addItem in BookCopiesCommands">
-      <change afterPath="$PROJECT_DIR$/src/menu/IMenuCommand.java" afterDir="false" />
+    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="try new branch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lib.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/AuthorCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/AuthorCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/BookCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/MenuCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/MenuCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/ItemsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/ItemsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/LibCatalogMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/LibCatalogMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -66,7 +58,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "marina",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/USER/IdeaProjects/Sbapp",
     "project.structure.last.edited": "Libraries",
@@ -166,7 +158,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716060912657</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="findBookCopies added&#10;refactor addItem in BookCopiesCommands">
+      <option name="closed" value="true" />
+      <created>1716572336163</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716572336164</updated>
+    </task>
+    <task id="LOCAL-00008" summary="try new branch">
+      <option name="closed" value="true" />
+      <created>1716574389160</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716574389160</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,7 +184,8 @@
     <MESSAGE value="add copies to separate class plan item is added" />
     <MESSAGE value="Book copies remove added" />
     <MESSAGE value="findBookCopies added&#10;refactor addItem in BookCopiesCommands" />
-    <option name="LAST_COMMIT_MESSAGE" value="findBookCopies added&#10;refactor addItem in BookCopiesCommands" />
+    <MESSAGE value="try new branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="try new branch" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
