@@ -65,16 +65,16 @@ Add:
 
 1. Repeat the cause of exception only
 2. ~~Books copies~~
-3. Clients (Work with clients)
-4. ``` Client part
+3. Work with readers
+
    ~~class Reader {id, name, last name, date of birth}~~
    ~~class BookLogsRecord {id, reader, bookcopy, date, take/return action}~~
    menu items 
    {Reader list: add, remove(!), update, print all}
-   {Books log: take, return, print all by reader, print all readers}
+   ~~{Books log: take, return, print all by reader, print all readers}~~
    {Find book: by name (wrong values), by id (wrong values), by author, show all books available}
    {Report: show all "on hand"(!), show all readers in due}
-   ```
+   
 4. ~~Add book new copies to BookCommand~~
 5. Check exception message in linking method
 6. ~~rewrite add copies to separate class extends MenuCommands~~
@@ -89,26 +89,7 @@ Add:
 15. Add default meaning to items in case of wrong data values
 16. ~~Reader: write addItem, editItem~~
 17. ~~To String BookLogs add reader id~~
+18. Check menu titles
 
-
-Additional branch
-=======
-additional things
-
-список доработок
-! журнал
-! несколько авторов
-! дополнительные запросы
-?? можно в Commands добавить remove, update, insert
-??? Commands можно переписать над IListCommands
-??? разобраться с Optional
-https://www.baeldung.com/java-optional
-? разобраться с необрабатываемым исключением
-
-*** но лучше *****
-
-***** and once more ****
-
-********
 
 

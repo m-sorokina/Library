@@ -30,29 +30,15 @@ public class ItemsList<T> {
         return listOf;
     }
 
-//    public void setListOf(List<T> listOf) {
-//        this.listOf = listOf;
-//    }
-
     public T getItem(int index) {
         checkIndex(index);
         return listOf.get(index);
     }
 
-//    public void setItem(int index, T item) {
-//        checkIndex(index);
-//        listOf.set(index, item);
-//    }
-
     public void add(T item) {
         ((Item) item).setId(listOf.isEmpty() ? 1 : ((Item) listOf.getLast()).getId() + 1);
         listOf.add(item);
     }
-
-//    public void remove(int index) {
-//        checkIndex(index);
-//        listOf.remove(index);
-//    }
 
     public void remove(T item) {
         listOf.remove(item);

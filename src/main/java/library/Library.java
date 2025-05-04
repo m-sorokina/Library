@@ -34,12 +34,6 @@ public class Library {
         readers.add(new Reader("Arthur", "King", new LocalDate(1990, 12, 14)));
 
         bookLogsRecords = new ItemsList<>("LOG RECORDS");
-//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(2), new LocalDate(2024, 4, 25), BookLogsRecord.ActionTypes.TAKE));
-//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(2), new LocalDate(2024, 5, 15), BookLogsRecord.ActionTypes.RETURN));
-//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(2), new LocalDate(2024, 5, 15), BookLogsRecord.ActionTypes.TAKE));
-//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(1), bookCopies.getItem(0), new LocalDate(2024, 5, 15), BookLogsRecord.ActionTypes.TAKE));
-//        bookLogsRecords.add(new BookLogsRecord(readers.getItem(2), bookCopies.getItem(1), new LocalDate(2024, 5, 25), BookLogsRecord.ActionTypes.TAKE));
-
     }
 
     public ItemsList<Author> getAuthors() {

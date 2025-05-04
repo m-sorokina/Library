@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="adding Reader class and Reader list menu item">
-      <change afterPath="$PROJECT_DIR$/src/commands/BookLogsCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/FindBookCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commands/ReportCommands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/BookLogsRecord.java" afterDir="false" />
+    <list default="true" id="9c556ee9-ff4d-4f9c-9dd1-18193530b0d8" name="Changes" comment="Find book, Report menu added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lib.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/AuthorCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/AuthorCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/BookCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/BookCopiesCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/ReaderCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/ReaderCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/BookCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/BookCopy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/WorkWithReadersMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/WorkWithReadersMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +33,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;m-sorokina&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/m-sorokina/Library.git&quot;,
+    &quot;accountId&quot;: &quot;f2dc2d06-762f-425f-819a-24d052ddb2d5&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -60,7 +55,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2ePdGND3yoe6C1n3PDj7rr1gIbG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -72,22 +67,28 @@
     "Application.Main.executor": "Run",
     "Attach to process.pid 2752.executor": "ProcessAttachDebug",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TestItemsList.testAdd.executor": "Run",
+    "Maven.library [install].executor": "Run",
+    "Maven.library.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "marina",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/USER/IdeaProjects/VirtSchoolM",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "D:/!Разобрать/IdeaProjects/Library",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "build.tools"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\!Разобрать\IdeaProjects\Library\src\main\java" />
       <recent name="C:\Users\USER\IdeaProjects\Library" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -99,26 +100,34 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestItemsList.testAdd">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="menu.Main" />
-      <module name="Library" />
+      <module name="library" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestItemsList.testAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestItemsList" />
+      <option name="METHOD_NAME" value="testAdd" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestItemsList.testAdd" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -225,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717190304355</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Find book, Report menu added">
+      <option name="closed" value="true" />
+      <created>1717358190661</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717358190662</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +267,8 @@
     <MESSAGE value="try new branch 3" />
     <MESSAGE value="moving find from ItemList to Menu: BookCopies" />
     <MESSAGE value="adding Reader class and Reade list menu item" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding Reader class and Reade list menu item" />
+    <MESSAGE value="Find book, Report menu added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Find book, Report menu added" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
